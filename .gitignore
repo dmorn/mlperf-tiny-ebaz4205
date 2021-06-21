@@ -1,0 +1,4 @@
+*.swp
+toolchain
+*.o
+build
