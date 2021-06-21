@@ -1,17 +1,17 @@
-TARGET_TOOLCHAIN_ROOT := 
-TARGET_TOOLCHAIN_PREFIX := 
+TARGET_TOOLCHAIN_ROOT ?=
+TARGET_TOOLCHAIN_PREFIX ?=
 
 # These are microcontroller-specific rules for converting the ELF output
 # of the linker into a binary image that can be loaded directly.
-CXX             := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)clang++'
-CC              := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)clang'
-AS              := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)as'
-AR              := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)ar' 
-LD              := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)ld'
-NM              := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)nm'
-OBJDUMP         := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)objdump'
-OBJCOPY         := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)objcopy'
-SIZE            := '$(TARGET_TOOLCHAIN_ROOT)$(TARGET_TOOLCHAIN_PREFIX)size'
+CXX             ?=
+CC              ?=
+AS              ?=
+AR              ?=
+LD              ?=
+NM              ?=
+OBJDUMP         ?=
+OBJCOPY         ?=
+SIZE            ?=
 
 RM = rm -f
 ARFLAGS := -csr
@@ -28,7 +28,7 @@ $(patsubst %.cc,%.o,$(SRCS))
 CXXFLAGS += -std=c++11 -I.
 CCFLAGS +=  -std=c11 -I.
 
-LDFLAGS +=  -lm
+LDFLAGS +=  -lm -static
 
 %.o: %.cc
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
