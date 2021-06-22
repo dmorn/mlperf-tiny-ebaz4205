@@ -1,6 +1,6 @@
 [submodule "br2"]
 	path = br2
-	url = https://github.com/embed-me/ebaz4205_buildroot.git
+	url = https://github.com/jecoz/br2-ebaz4205.git
 [submodule "buildroot"]
 	path = buildroot
 	url = https://github.com/buildroot/buildroot.git
