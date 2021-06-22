@@ -34,6 +34,9 @@ CCFLAGS +=  -std=c11 -I.
 
 LDFLAGS +=  -lm -static
 
+$(BINDIR):
+	mkdir -p $(BINDIR)
+
 %.o: %.cc
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 
@@ -42,7 +45,7 @@ LDFLAGS +=  -lm -static
 
 all: runner
 
-runner : download_deps $(OBJS)
+runner : download_deps $(OBJS) $(BINDIR)
 	$(CXX) $(CXXFLAGS) -o $(BINDIR)/$@ $(OBJS) $(LDFLAGS)
 
 runner_msan : download_deps $(OBJS)

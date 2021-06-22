@@ -1,7 +1,10 @@
 ROOTDIR=.
 include config.mk
 
-all: $(TOOLCHAIN)
+all: $(TOOLCHAIN) $(BINS)
+
+$(BINDIR)/%:
+	$(MAKE) -C $(SRC) $*
 
 $(BR2_ROOT)/Makefile: ; git submodule update --init --recursive	
 $(BR2_EXTERNAL)/external.desc: ; git submodule update --init --recursive	
