@@ -1,3 +1,6 @@
+ROOTDIR=..
+include ../config.mk
+
 TARGET_TOOLCHAIN_ROOT ?=
 TARGET_TOOLCHAIN_PREFIX ?=
 
@@ -21,6 +24,7 @@ main.cc \
 submitter_implemented.cc \
 api/internally_implemented.cc
 
+BINDIR ?=
 
 OBJS += \
 $(patsubst %.cc,%.o,$(SRCS))
@@ -39,7 +43,7 @@ LDFLAGS +=  -lm -static
 all: runner
 
 runner : download_deps $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $(OBJS) $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) -o $(BINDIR)/$@ $(OBJS) $(LDFLAGS)
 
 runner_msan : download_deps $(OBJS)
 	$(CXX) $(CXXFLAGS) -fsanitize=memory -o $@ $(OBJS) $(LDFLAGS)
