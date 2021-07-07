@@ -21,10 +21,10 @@ th_vprintf(const char *format, va_list ap) {
 
 void
 th_printf(const char *p_fmt, ...) {
-  va_list args;
-  va_start(args, p_fmt);
-  (void)th_vprintf(p_fmt, args); /* ignore return */
-  va_end(args);
+	va_list args;
+	va_start(args, p_fmt);
+	(void)th_vprintf(p_fmt, args); /* ignore return */
+	va_end(args);
 }
 
 char th_getchar() {
