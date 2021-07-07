@@ -8,4 +8,5 @@ bin=$target-$version
 boudrate=115200
 serial=/dev/ttyPS0
 
+echo Sending $bin to $host
 scp bin/$target $user@$host:$bin
