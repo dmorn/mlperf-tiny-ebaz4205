@@ -12,15 +12,28 @@ limitations under the License.
 /// \file
 /// \brief Main function to run benchmark on device.
 
+#include <stdio.h>
+#include <stdlib.h>
 #include "api/internally_implemented.h"
 #include "api/submitter_implemented.h"
 
+int
+usage(char *name) {
+	fprintf(stderr, "usage: %s [serial device, e.g. /dev/ttyPS0]");
+	exit(2);
+}
+
 int main(int argc, char *argv[]) {
-  ee_benchmark_initialize();
-  while (1) {
-    int c;
-    c = th_getchar();
-    ee_serial_callback(c);
-  }
-  return 0;
+	if(argc < 1) {
+		usage(argv[0]);
+	}
+	line = argv[1];
+
+	ee_benchmark_initialize();
+	while (1) {
+		int c;
+		c = th_getchar();
+		ee_serial_callback(c);
+	}
+	return 0;
 }

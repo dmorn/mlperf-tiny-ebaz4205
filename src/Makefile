@@ -1,6 +1,7 @@
 ROOTDIR=..
 include ../config.mk
 
+BINDIR ?=
 TARGET_TOOLCHAIN_ROOT ?=
 TARGET_TOOLCHAIN_PREFIX ?=
 
@@ -19,34 +20,30 @@ SIZE            ?=
 RM = rm -f
 ARFLAGS := -csr
 
-SRCS += \
-main.cc \
-submitter_implemented.cc \
-api/internally_implemented.cc
+CPPSRCS += main.cpp submitter_implemented.cpp api/internally_implemented.cpp
+CCSRCS += io.c
 
-BINDIR ?=
-
-OBJS += \
-$(patsubst %.cc,%.o,$(SRCS))
+OBJS += $(patsubst %.cpp,%.o,$(CPPSRCS))
+OBJS += $(patsubst %.c,%.o,$(CCSRCS))
 
 CXXFLAGS += -std=c++11 -I.
 CCFLAGS +=  -std=c11 -I.
-
 LDFLAGS +=  -lm -static
 
-$(BINDIR):
-	mkdir -p $(BINDIR)
+all: runner
+$(BINDIR): ; mkdir -p $(BINDIR)
 
-%.o: %.cc
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
 
 %.o: %.c
 	$(CC) $(CCFLAGS) $(INCLUDES) -c $< -o $@
 
-all: runner
 
-runner : download_deps $(OBJS) $(BINDIR)
-	$(CXX) $(CXXFLAGS) -o $(BINDIR)/$@ $(OBJS) $(LDFLAGS)
+runner: download_deps $(OBJS) $(BINDIR)
+	$(CXX) -o $(BINDIR)/$@ $(OBJS) $(LDFLAGS)
+st: $(BINDIR) serial.o
+	$(CC) -o $(BINDIR)/$@ serial.o $(LDFLAGS)
 
 runner_msan : download_deps $(OBJS)
 	$(CXX) $(CXXFLAGS) -fsanitize=memory -o $@ $(OBJS) $(LDFLAGS)
@@ -62,7 +59,7 @@ download_deps:
 
 clean:
 	-$(RM) $(OBJS)
-	-$(RM) runner
+	-$(RM) $(BINDIR)/runner
 
 clean_downloads:
 	$(RM) -r $(DOWNLOADS)

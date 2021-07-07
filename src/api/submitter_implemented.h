@@ -31,6 +31,10 @@ methods from th_libc.h and all testharness methods from th_lib.h are here.
 /// methods default to an empty implementation. These methods are provided to
 /// enable submitter optimizations, and are not required for submission.
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifndef MLPERF_TINY_V0_1_API_SUBMITTER_IMPLEMENTED_H_
 #define MLPERF_TINY_V0_1_API_SUBMITTER_IMPLEMENTED_H_
 
@@ -38,8 +42,8 @@ methods from th_libc.h and all testharness methods from th_lib.h are here.
 /// \detail This API is designed for performance evaluation only. In order to
 /// gather energy measurments we recommend using the EEMBC test suite.
 #define EE_MSG_TIMESTAMP "m-lap-us-%lu\r\n"
-#define TH_VENDOR_NAME_STRING "unspecified"
-#define TH_MODEL_VERSION EE_MODEL_VERSION_IC01 // TODO: what is this?
+#define TH_VENDOR_NAME_STRING "xlnx"
+#define TH_MODEL_VERSION "zynq-7000"
 
 #define MAX_DB_INPUT_SIZE (96 * 96 * 3)
 #ifndef TH_MODEL_VERSION
@@ -66,6 +70,8 @@ methods from th_libc.h and all testharness methods from th_lib.h are here.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+extern char *line;
 
 /// \brief required core API
 void th_load_tensor();
@@ -95,3 +101,7 @@ void *th_memcpy(void *dst, const void *src, size_t n);
 int th_vprintf(const char *format, va_list ap);
 
 #endif  // MLPERF_TINY_V0_1_API_SUBMITTER_IMPLEMENTED_H_
+
+#ifdef __cplusplus
+}
+#endif

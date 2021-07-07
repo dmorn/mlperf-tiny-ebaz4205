@@ -103,19 +103,6 @@ void *th_memcpy(void *dst, const void *src, size_t n) {
   return memcpy(dst, src, n);
 }
 
-/* N.B.: Many embedded *printf SDKs do not support all format specifiers. */
-int th_vprintf(const char *format, va_list ap) { return vprintf(format, ap); }
-void th_printf(const char *p_fmt, ...) {
-  va_list args;
-  va_start(args, p_fmt);
-  (void)th_vprintf(p_fmt, args); /* ignore return */
-  va_end(args);
-}
-
-char th_getchar() { return getchar(); }
-
-void th_serialport_initialize(void) { }
-
 void th_timestamp(void) {
   unsigned long microSeconds = 0ul;
   /* USER CODE 2 BEGIN */
