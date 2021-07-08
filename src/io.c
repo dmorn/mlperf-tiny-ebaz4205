@@ -8,6 +8,7 @@
 int port;
 char *line;
 
+
 void
 fatale(char *s) {
 	perror(s);
@@ -16,6 +17,7 @@ fatale(char *s) {
 
 int
 th_vprintf(const char *format, va_list ap) {
+	int vdprintf(int __fd, const char *__restrict __fmt, __gnuc_va_list __arg);
 	return vdprintf(port, format, ap);
 }
 
@@ -39,6 +41,7 @@ char th_getchar() {
 void
 th_serialport_initialize(void) {
 	struct termios tty;
+	void cfmakeraw(struct termios *__termios_p);
 
 	// TODO: when is this resource released?
 	if((port = open(line, O_RDWR)) < 0) {
