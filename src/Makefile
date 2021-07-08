@@ -5,8 +5,6 @@ BINDIR ?=
 TARGET_TOOLCHAIN_ROOT ?=
 TARGET_TOOLCHAIN_PREFIX ?=
 
-# These are microcontroller-specific rules for converting the ELF output
-# of the linker into a binary image that can be loaded directly.
 CXX             ?=
 CC              ?=
 AS              ?=
@@ -38,7 +36,6 @@ $(BINDIR): ; mkdir -p $(BINDIR)
 
 %.o: %.c
 	$(CC) $(CCFLAGS) $(INCLUDES) -c $< -o $@
-
 
 runner: download_deps $(OBJS) $(BINDIR)
 	$(CXX) -o $(BINDIR)/$@ $(OBJS) $(LDFLAGS)

@@ -32,6 +32,7 @@ char th_getchar() {
 	if(read(port, buf, sizeof(buf)) < 0) {
 		fatale("th_getchar");
 	}
+	// printf("debug: th_getchar: %c\n", buf[0]);
 	return buf[0];
 }
 
@@ -46,6 +47,7 @@ th_serialport_initialize(void) {
 	if(tcgetattr(port, &tty) != 0) {
 		fatale("th_serialport_initialize");
 	}
+	cfmakeraw(&tty);
 	cfsetispeed(&tty, B115200);
 	cfsetospeed(&tty, B115200);
 
