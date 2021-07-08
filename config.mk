@@ -3,7 +3,7 @@ ROOTDIR ?=
 SRC      := $(ROOTDIR)/src
 BR2_ROOT := $(ROOTDIR)/buildroot
 BENCH    := $(ROOTDIR)/bench
-BINDIR   := $(ROOTDIR)/bin
+BINDIR   := $(abspath $(ROOTDIR)/bin)
 
 export BR2_EXTERNAL     := $(abspath $(ROOTDIR)/br2)
 TARGET_TOOLCHAIN_ROOT   := $(BR2_ROOT)/output/host/bin
