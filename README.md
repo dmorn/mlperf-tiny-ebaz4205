@@ -13,7 +13,8 @@ First, run `make` (GNU) within the root folder to:
 
 Now enter the buildroot folder and run `make` to build the linux kernel.
 Everything in `output/images` should be copied in a suitable sd card (TODO:
-doc), together with the `../br2/ebaz4205/uEnv.txt` file.
+doc), together with the `../br2/ebaz4205/uEnv.txt` file AND a suitable
+bitstream file (more on this later).
 
 I am powering the board connected via ethernet cable to a network that
 configures the board using DHCP. I then ssh into the board for running the
