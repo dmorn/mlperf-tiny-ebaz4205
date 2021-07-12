@@ -21,7 +21,15 @@ configures the board using DHCP. I then ssh into the board for running the
 target side of the benchmark. The serial UART is reserved for the host part of
 the eembc framework.
 
-`./deploy.sh` is used to transfer a new build of the tool to the board.
+`./deploy.sh` is used to transfer a new build of the tool to the board. Run the
+executable with a suitable console device (i.e. the serial port connected to
+your host machine that runs the benchmark framework). I run it like
+```
+% ./runner-a2ed450 /dev/ttyPS0
+```
+
+On the other side, run the framework following their intructions which you can
+find https://github.com/eembc/energyrunner.
 
 ### Gotchas
 - this repo uses submodules. You should clone it with `git clone
