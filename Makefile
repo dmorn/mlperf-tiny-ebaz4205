@@ -1,7 +1,11 @@
 ROOTDIR=.
 include config.mk
 
-all: $(TOOLCHAIN) $(BINS)
+all: $(TOOLCHAIN) $(BINS) copy-data
+
+.PHONY: copy-data
+copy-data:
+	cp -r datasets/ic01 $(DATADIR)
 
 $(BINDIR)/%:
 	$(MAKE) -C $(SRC) $(@F)
