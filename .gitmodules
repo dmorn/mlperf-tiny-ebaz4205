@@ -4,3 +4,6 @@
 [submodule "energyrunner"]
 	path = energyrunner
 	url = git@github.com:eembc/energyrunner.git
+[submodule "tiny"]
+	path = tiny
+	url = git@github.com:mlcommons/tiny.git

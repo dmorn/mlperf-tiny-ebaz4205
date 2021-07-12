@@ -43,7 +43,7 @@ extern "C" {
 /// gather energy measurments we recommend using the EEMBC test suite.
 #define EE_MSG_TIMESTAMP "m-lap-us-%lu\r\n"
 #define TH_VENDOR_NAME_STRING "xlnx"
-#define TH_MODEL_VERSION "zynq-7000"
+#define TH_MODEL_VERSION EE_MODEL_VERSION_IC01  // RESNET, CIFAR-10
 
 #define MAX_DB_INPUT_SIZE (96 * 96 * 3)
 #ifndef TH_MODEL_VERSION
