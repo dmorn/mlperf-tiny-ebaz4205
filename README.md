@@ -38,3 +38,5 @@ kernel. Vitis AI Runtime can control the DPU with XRT. ZOCL is the kernel
 module that talks to acceleration kernels. It needs a device tree node which
 has to be added.
 
+- https://developer.xilinx.com/en/articles/implementing-ai-in-an-embedded-project.html
+- https://github.com/Xilinx/Vitis-Tutorials/blob/master/Vitis_Platform_Creation/Introduction/02-Edge-AI-ZCU104/step1.md
