@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 13 14:30:19 2021
+# Process ID: 364873
+# Current directory: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.runs/synth_1
+# Command line: vivado -log ebaz4205_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ebaz4205_top.tcl
+# Log file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.runs/synth_1/ebaz4205_top.vds
+# Journal file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ebaz4205_top.tcl -notrace

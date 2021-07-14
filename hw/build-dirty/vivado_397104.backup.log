@@ -1,0 +1,282 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 13 18:21:53 2021
+# Process ID: 397104
+# Current directory: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1
+# Command line: vivado ebaz4205_top.xpr
+# Log file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/vivado.log
+# Journal file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ebaz4205_top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/dan/src/mlperf-tiny-ebaz4205/hw/IP/DPU-TRD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dan/xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 7281.840 ; gain = 73.109 ; free physical = 1139 ; free virtual = 5410
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.srcs/sources_1/bd/system/system.bd}
+Reading block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:DPUCZDX8G:3.3 - DPUCZDX8G_0
+Successfully read diagram <system> from block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 8630.281 ; gain = 1251.395 ; free physical = 958 ; free virtual = 5259
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+update_ip_catalog
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+create_bd_cell --help
+ERROR: [Common 17-170] Unknown option '--help', please type 'create_bd_cell -help' for usage info.
+create_bd_cell -help
+create_bd_cell
+
+Description: 
+Add an IP cell from the IP catalog, or add a new hierarchical block.
+
+Syntax: 
+create_bd_cell  [-vlnv <arg>] [-type <arg>] [-reference <arg>]
+                [-revision <arg>] [-quiet] [-verbose] <name>
+
+Returns: 
+The newly created cell object. Returns nothing if the command fails.
+
+Usage: 
+  Name          Description
+  -------------------------
+  [-vlnv]       Vendor:Library:Name:Version of the IP cell to add from the IP
+                catalog.
+  [-type]       Type of cell to create. Valid values are IP, hier, container 
+                and module.
+                Default: IP
+  [-reference]  Top module-name or file-path of the module which is referred 
+                to create the cell.
+  [-revision]   (Optional) Core revision
+                Default: -1
+  [-quiet]      Ignore command errors
+  [-verbose]    Suspend message limits during command execution
+  <name>        Name of cell to create
+
+Categories: 
+IPIntegrator
+
+Description:
+
+  Add a cell from the Vivado catalog to the current subsystem design, create
+  a new hierarchical module to add to the subsystem design, or create a new
+  module by referencing the module definition from an HDL source file.
+
+  When adding an IP core from the catalog, the -vlnv argument is required.
+
+  When creating a new hierarchical block design module, the -type hier
+  argument is required.
+
+  When creating a block design module that references an RTL module or entity
+  declaration the -type module argument is required, as well as -reference.
+  The module reference feature lets you add a module definition from an RTL
+  file (Verilog or VHDL) into the block design. The source file containing
+  the module definition must be added to the project, or read into the design
+  before creating a module reference. Refer to the Vivado Design Suite User
+  Guide: Designing IP Subsystems Using IP Integrator (UG994) for more
+  information on referencing modules.
+
+  This command returns the name of the newly created cell object, or returns
+  nothing if the command fails.
+
+Arguments:
+
+  -vlnv <arg> - (Required) This option is required for -type IP (the
+  default), or optional for -type hier. Specify the
+  Vendor:Library:Name:Version attribute of the cell to add from the IP
+  integrator catalog. The VLNV attribute identifies the object in the IP
+  integrator catalog. This argument is not needed when creating a new
+  hierarchical module.
+
+  Note: The -vlnv property for IP from the IP integrator catalog refers to
+  files in the Vivado Design Suite installation hierarchy that can be found
+  at data/ip/xilinx.
+
+  -type [ IP | hier | container | module ] - (Optional) Specify the cell as
+  being:
+
+   *  IP: IP from the Vivado IP catalog. This is the default type of block
+      design cell created, but requires the use of the -vlnv option.
+
+   *  hier: A new empty hierarchical block design module to add to, and
+      populate in the current design.
+
+      container: A block design container referenced from a BD file loaded in
+      the source fileset.
+
+      This requires the use of the -reference option.
+
+   *  module: A hierarchical module referenced from a Verilog or VHDL file
+      loaded in the source fileset. This requires the use of the -reference
+      option.
+
+  Note: Although both -vlnv and -type are marked as Optional, one or the
+  other must be specified. Use -vlnv to identify the IP core to add from the
+  Vivado IP catalog, or specify -type to create or reference a hierarchical
+  module.
+
+  -reference <arg> - (Optional) Specifies the module name to reference from a
+  loaded RTL design source file.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - The name of the IP cell or hierarchical module to add to the
+  current IP subsystem design.
+
+Examples:
+
+  This example adds an AXI FIFO core from the IP integrator catalog to the
+  current subsystem design, with the specified name:
+
+    create_bd_cell -vlnv xilinx.com:ip:axi_fifo_mm_s:4.0 axi_fifo_1  
+    
+
+  Note: The -vlnv argument identifies the core to add from the Vivado catalog.
+
+  This example creates a new block design container in the block design,
+  referencing the specified module definition from a previously loaded BD
+  source file:
+
+    set bdc [ create_bd_cell -type container -reference hier_0 bdc ]
+
+  This example creates a new module in the block design, referencing the
+  specified module definition from a previously loaded RTL source file:
+
+    create_bd_cell -type module -reference rtlRam rtlRam_0 
+    
+
+  This example creates a new hierarchical module, myModule1, and moves the
+  AXI FIFO from the prior example into the new module. myModule1 is set as
+  the current instance in the subsystem design, and a new module is created,
+  myModule2, which is added to the current instance. Finally the current
+  instance is reset to point to the top-level of the subsystem design:
+
+    create_bd_cell -type hier myModule1  
+    /myModule1  
+    move_bd_cells /myModule1 [get_bd_cells /axi_fifo_1]  
+    /myModule1  
+    current_bd_instance /myModule1  
+    /myModule1  
+    create_bd_cell -type hier myModule2  
+    /myModule1/myModule2  
+    current_bd_instance  
+    / 
+    
+
+See Also:
+
+   *  copy_bd_objs
+   *  current_bd_instance
+   *  move_bd_cells
+   *  update_module_reference
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:1.0 clk_wiz_0
+ERROR: [BD 5-390] IP definition not found for VLNV: xilinx.com:ip:clk_wiz:1.0 
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.0 clk_wiz_0
+ERROR: [BD 5-390] IP definition not found for VLNV: xilinx.com:ip:clk_wiz:5.0 
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+ERROR: [Common 17-170] Unknown option '-ip', please type 'create_bd_cell -help' for usage info.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.0 clk_wiz_0
+ERROR: [BD 5-390] IP definition not found for VLNV: xilinx.com:ip:clk_wiz:5.0 
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 13 18:52:45 2021...

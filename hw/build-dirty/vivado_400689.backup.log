@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 14 10:54:08 2021
+# Process ID: 400689
+# Current directory: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty
+# Command line: vivado ebaz4205_top.xpr
+# Log file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/vivado.log
+# Journal file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ebaz4205_top.xpr
+INFO: [Project 1-313] Project file moved from '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/dan/src/mlperf-tiny-ebaz4205/hw/IP/DPU-TRD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dan/xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 7266.828 ; gain = 58.098 ; free physical = 3831 ; free virtual = 8216
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd}
+Reading block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:DPUCZDX8G:3.3 - DPUCZDX8G_0
+Successfully read diagram <system> from block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 8623.961 ; gain = 1252.949 ; free physical = 3700 ; free virtual = 8078
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_0'. Failed to customize IP instance 'system_clk_wiz_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0
+ERROR: [BD 5-216] VLNV <xilinx.com:ip:clk_wiz:5.4> is not supported for the current part. The latest supported version for this part is: <6.0>
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0
+ERROR: [BD 5-216] VLNV <xilinx.com:ip:clk_wiz:5.4> is not supported for the current part. The latest supported version for this part is: <6.0>
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+WARNING: [IP_Flow 19-3427] DRC File /home/dan/xilinx/Vivado/2020.2/data/ip/xilinx/clk_wiz_v6_0/xgui/clk_wiz_v6_0.tcl does not exist
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT2_USED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USER_CLK_FREQ0'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_AUTO_PRIMITIVE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USER_CLK_FREQ1'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USER_CLK_FREQ2'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USER_CLK_FREQ3'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_ENABLE_CLOCK_MONITOR'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_ENABLE_USER_CLOCK0'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_ENABLE_USER_CLOCK1'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_ENABLE_USER_CLOCK2'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_ENABLE_USER_CLOCK3'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_Enable_PLL0'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_Enable_PLL1'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_REF_CLK_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PRECISION'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT3_USED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT4_USED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT5_USED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT6_USED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT7_USED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_CLKOUT1_BAR'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_CLKOUT2_BAR'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_CLKOUT3_BAR'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_CLKOUT4_BAR'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PLATFORM'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_FREQ_SYNTH'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_PHASE_ALIGNMENT'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PRIM_IN_JITTER'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_SECONDARY_IN_JITTER'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_JITTER_SEL'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_MIN_POWER'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_MIN_O_JITTER'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_MAX_I_JITTER'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_DYN_PHASE_SHIFT'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_INCLK_SWITCHOVER'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_DYN_RECONFIG'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_SPREAD_SPECTRUM'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_FAST_SIMULATION'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PRIMTYPE_SEL'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_CLK_VALID'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PRIM_IN_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PRIM_IN_TIMEPERIOD'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_IN_FREQ_UNITS'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_SECONDARY_IN_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_SECONDARY_IN_TIMEPERIOD'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_FEEDBACK_SOURCE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PRIM_SOURCE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_PHASESHIFT_MODE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_SECONDARY_SOURCE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKFB_IN_SIGNALING'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_RESET'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_RESET_LOW'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_LOCKED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_INCLK_STOPPED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_CLKFB_STOPPED'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_POWER_DOWN'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_STATUS'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_USE_FREEZE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_NUM_OUT_CLKS'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT1_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT2_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT3_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT4_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT5_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT6_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT7_DRIVES'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_INCLK_SUM_ROW0'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_INCLK_SUM_ROW1'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_INCLK_SUM_ROW2'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW0A'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW0B'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW1'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW2'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW3'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW4'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW5'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW6'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_OUTCLK_SUM_ROW7'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT1_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT2_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT3_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT4_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT5_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT6_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT7_REQUESTED_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT1_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT2_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT3_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT4_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT5_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT6_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT7_REQUESTED_PHASE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT1_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT2_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT3_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT4_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT5_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT6_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT7_REQUESTED_DUTY_CYCLE'. Either a method should be added or the model parameter should be removed.
+WARNING: [IP_Flow 19-1037] No method available to update the model parameter 'C_CLKOUT1_OUT_FREQ'. Either a method should be added or the model parameter should be removed.
+INFO: [Common 17-14] Message 'IP_Flow 19-1037' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [IP_Flow 19-713] XIT input file '/home/dan/xilinx/Vivado/2020.2/data/ip/xilinx/clk_wiz_v6_0/elaborate/ports.xit' is not readable.
+ERROR: [IP_Flow 19-711] Failed to read XIT input file '/home/dan/xilinx/Vivado/2020.2/data/ip/xilinx/clk_wiz_v6_0/elaborate/ports.xit'.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file '/home/dan/xilinx/Vivado/2020.2/data/ip/xilinx/clk_wiz_v6_0/elaborate/ports.xit': Problem reading XIT file
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3541] IP Elaboration error: Failed to generate IP 'clk_wiz_0'. Failed to generate 'Elaborate Ports' outputs: 
+ERROR: [BD 41-1689] Failed to generate IP 'clk_wiz_0'. Failed to generate 'Elaborate Ports' outputs: 
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_1'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_1'. Failed to customize IP instance 'system_clk_wiz_0_1'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_1'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_1'. Failed to customize IP instance 'system_clk_wiz_0_1'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+can't read "PRIMITIVE": no such variable
+ERROR: [IP_Flow 19-3476] Tcl error in create_gui procedure for BD Cell 'system_clk_wiz_0_1'. can't read "PRIMITIVE": no such variable
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_1'. Failed to customize IP instance 'system_clk_wiz_0_1'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+ERROR: [Common 17-161] Invalid option value 'Auto' specified for 'objects'.
+ERROR: [IP_Flow 19-3476] Tcl error in create_gui procedure for BD Cell 'system_clk_wiz_0_1'. ERROR: [Common 17-161] Invalid option value 'Auto' specified for 'objects'.
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_1'. Failed to customize IP instance 'system_clk_wiz_0_1'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+ERROR: [Common 17-161] Invalid option value 'Auto' specified for 'objects'.
+ERROR: [IP_Flow 19-3476] Tcl error in create_gui procedure for BD Cell 'system_clk_wiz_0_1'. ERROR: [Common 17-161] Invalid option value 'Auto' specified for 'objects'.
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_1'. Failed to customize IP instance 'system_clk_wiz_0_1'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'system_clk_wiz_0_1'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object system_clk_wiz_0_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'system_clk_wiz_0_1'. Failed to customize IP instance 'system_clk_wiz_0_1'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 5-7] Error: running create_bd_cell  -vlnv xilinx.com:ip:clk_wiz:6.0 -type ip -name clk_wiz_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0
+FALSE
+ERROR: [IP_Flow 19-3188] Error occurred while initializing 'clk_wiz_0'
+Tcl error in update procedure while setting value 'MMCM' on the parameter 'PRIMITIVE'. FALSE
+
+ERROR: [IP_Flow 19-3428] Failed to create Customization object clk_wiz_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'clk_wiz_0'. Failed to customize IP instance 'clk_wiz_0'. Failed to load customization data
+ERROR: [Common 17-69] Command failed: Create IP failed with errors
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0
+endgroup
+delete_bd_objs [get_bd_cells axi_intc_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 14 11:42:15 2021...
