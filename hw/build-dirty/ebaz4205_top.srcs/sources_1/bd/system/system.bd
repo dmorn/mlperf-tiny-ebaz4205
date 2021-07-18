@@ -15,8 +15,7 @@
       "DPUCZDX8G_0": "",
       "clk_wiz_0": "",
       "proc_sys_reset_0": "",
-      "proc_sys_reset_1": "",
-      "proc_sys_reset_2": ""
+      "proc_sys_reset_1": ""
     },
     "interface_ports": {
       "ddr": {
@@ -115,7 +114,7 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "system_processing_system7_0_0_FCLK_CLK0",
+            "value": "system_processing_system7_0_0_FCLK_CLK1",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
@@ -229,10 +228,10 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "25.000000"
+            "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "25.000000"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -250,7 +249,7 @@
             "value": "20.000000"
           },
           "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "10.000000"
           },
           "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -283,16 +282,19 @@
             "value": "111.111115"
           },
           "PCW_CLK0_FREQ": {
-            "value": "25000000"
+            "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
-            "value": "10000000"
+            "value": "25000000"
           },
           "PCW_CLK2_FREQ": {
             "value": "10000000"
           },
           "PCW_CLK3_FREQ": {
             "value": "10000000"
+          },
+          "PCW_CORE0_FIQ_INTR": {
+            "value": "1"
           },
           "PCW_DDR_RAM_HIGHADDR": {
             "value": "0x0FFFFFFF"
@@ -325,7 +327,7 @@
             "value": "1"
           },
           "PCW_EN_CLK1_PORT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_CD_SDIO0": {
             "value": "0"
@@ -346,7 +348,7 @@
             "value": "1"
           },
           "PCW_EN_I2C0": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_EN_SDIO0": {
             "value": "1"
@@ -360,13 +362,19 @@
           "PCW_FCLK_CLK0_BUF": {
             "value": "TRUE"
           },
-          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "25"
+          "PCW_FCLK_CLK1_BUF": {
+            "value": "TRUE"
           },
-          "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "100"
           },
+          "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "25"
+          },
           "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK1_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_EMIO_GPIO_ENABLE": {
@@ -384,26 +392,14 @@
           "PCW_GPIO_MIO_GPIO_IO": {
             "value": "MIO"
           },
-          "PCW_I2C0_GRP_INT_ENABLE": {
-            "value": "0"
-          },
-          "PCW_I2C0_I2C0_IO": {
-            "value": "MIO 26 .. 27"
-          },
           "PCW_I2C0_PERIPHERAL_ENABLE": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_I2C0_RESET_ENABLE": {
             "value": "0"
           },
-          "PCW_I2C_PERIPHERAL_FREQMHZ": {
-            "value": "111.111115"
-          },
           "PCW_I2C_RESET_ENABLE": {
             "value": "1"
-          },
-          "PCW_I2C_RESET_SELECT": {
-            "value": "Share reset pin"
           },
           "PCW_MIO_0_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -876,14 +872,14 @@
           "PCW_MIO_TREE_SIGNALS": {
             "value": "cs#gpio[1]#ale#we_b#data[2]#data[0]#data[1]#cle#re_b#data[4]#data[5]#data[6]#data[7]#data[3]#busy#gpio[15]#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#tx#rx#scl#sda#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#cd#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#clk#cmd#data[0]#data[1]#data[2]#data[3]#gpio[46]#gpio[47]#gpio[48]#gpio[49]#gpio[50]#gpio[51]#gpio[52]#gpio[53]"
           },
-          "PCW_NAND_GRP_D8_ENABLE": {
+          "PCW_NAND_PERIPHERAL_ENABLE": {
             "value": "0"
           },
-          "PCW_NAND_NAND_IO": {
-            "value": "MIO 0 2.. 14"
+          "PCW_NOR_PERIPHERAL_ENABLE": {
+            "value": "0"
           },
-          "PCW_NAND_PERIPHERAL_ENABLE": {
-            "value": "1"
+          "PCW_QSPI_PERIPHERAL_ENABLE": {
+            "value": "0"
           },
           "PCW_SD0_GRP_CD_ENABLE": {
             "value": "1"
@@ -913,7 +909,7 @@
             "value": "100"
           },
           "PCW_SMC_PERIPHERAL_VALID": {
-            "value": "1"
+            "value": "0"
           },
           "PCW_S_AXI_HP2_DATA_WIDTH": {
             "value": "32"
@@ -950,6 +946,9 @@
           },
           "PCW_USE_DMA0": {
             "value": "0"
+          },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
           },
           "PCW_USE_M_AXI_GP0": {
             "value": "1"
@@ -1115,23 +1114,41 @@
         "xci_path": "ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0.xci",
         "inst_hier_path": "DPUCZDX8G_0",
         "parameters": {
-          "ARCH_IMG_BKGRP": {
-            "value": "3"
+          "ARCH": {
+            "value": "512"
           },
-          "S_AXI_CLK_INDEPENDENT": {
+          "ARCH_IMG_BKGRP": {
+            "value": "2"
+          },
+          "CONV_DSP_ACCU_ENA": {
             "value": "1"
           },
+          "CONV_RELU_ADDON": {
+            "value": "2"
+          },
+          "DWCV_ENA": {
+            "value": "0"
+          },
+          "LOAD_AUGM": {
+            "value": "0"
+          },
+          "POOL_AVERAGE": {
+            "value": "0"
+          },
+          "S_AXI_CLK_INDEPENDENT": {
+            "value": "0"
+          },
           "TIME_DAY": {
-            "value": "14"
+            "value": "18"
           },
           "TIME_HOUR": {
-            "value": "14"
+            "value": "13"
           },
           "TIME_MONTH": {
             "value": "7"
           },
           "TIME_QUARTER": {
-            "value": "3"
+            "value": "2"
           },
           "TIME_YEAR": {
             "value": "21"
@@ -1189,14 +1206,17 @@
         "xci_path": "ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci",
         "inst_hier_path": "clk_wiz_0",
         "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "100.0"
+          },
           "CLKOUT1_DRIVES": {
             "value": "BUFG"
           },
           "CLKOUT1_JITTER": {
-            "value": "161.318"
+            "value": "90.074"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "222.305"
+            "value": "87.180"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
             "value": "400"
@@ -1205,10 +1225,10 @@
             "value": "BUFG"
           },
           "CLKOUT2_JITTER": {
-            "value": "175.029"
+            "value": "102.086"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "222.305"
+            "value": "87.180"
           },
           "CLKOUT2_REQUESTED_OUT_FREQ": {
             "value": "200"
@@ -1220,13 +1240,13 @@
             "value": "BUFG"
           },
           "CLKOUT3_JITTER": {
-            "value": "190.518"
+            "value": "115.831"
           },
           "CLKOUT3_PHASE_ERROR": {
-            "value": "222.305"
+            "value": "87.180"
           },
           "CLKOUT3_USED": {
-            "value": "true"
+            "value": "false"
           },
           "CLKOUT4_DRIVES": {
             "value": "BUFG"
@@ -1253,7 +1273,13 @@
             "value": "OPTIMIZED"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "48"
+            "value": "12"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
             "value": "3"
@@ -1262,16 +1288,22 @@
             "value": "6"
           },
           "MMCM_CLKOUT2_DIVIDE": {
-            "value": "12"
+            "value": "1"
           },
           "MMCM_COMPENSATION": {
             "value": "ZHOLD"
           },
           "NUM_OUT_CLKS": {
-            "value": "3"
+            "value": "2"
+          },
+          "PLL_CLKIN_PERIOD": {
+            "value": "10.000"
           },
           "PRIMITIVE": {
             "value": "PLL"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100"
           },
           "RESET_PORT": {
             "value": "resetn"
@@ -1292,12 +1324,6 @@
         "xci_name": "system_proc_sys_reset_1_0",
         "xci_path": "ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0.xci",
         "inst_hier_path": "proc_sys_reset_1"
-      },
-      "proc_sys_reset_2": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "system_proc_sys_reset_2_0",
-        "xci_path": "ip/system_proc_sys_reset_2_0/system_proc_sys_reset_2_0.xci",
-        "inst_hier_path": "proc_sys_reset_2"
       }
     },
     "interface_nets": {
@@ -1387,13 +1413,6 @@
           "eth0_gmii_tx_en"
         ]
       },
-      "processing_system7_0_FCLK_CLK0": {
-        "ports": [
-          "processing_system7_0/FCLK_CLK0",
-          "eth0_clk",
-          "clk_wiz_0/clk_in1"
-        ]
-      },
       "processing_system7_0_GPIO_O": {
         "ports": [
           "processing_system7_0/GPIO_O",
@@ -1411,7 +1430,7 @@
           "processing_system7_0/FCLK_RESET0_N",
           "proc_sys_reset_0/ext_reset_in",
           "proc_sys_reset_1/ext_reset_in",
-          "proc_sys_reset_2/ext_reset_in"
+          "clk_wiz_0/resetn"
         ]
       },
       "clk_wiz_0_clk_out2x": {
@@ -1428,7 +1447,8 @@
           "proc_sys_reset_1/slowest_sync_clk",
           "processing_system7_0/S_AXI_HP2_ACLK",
           "processing_system7_0/S_AXI_HP1_ACLK",
-          "processing_system7_0/S_AXI_HP0_ACLK"
+          "processing_system7_0/S_AXI_HP0_ACLK",
+          "processing_system7_0/M_AXI_GP0_ACLK"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -1443,18 +1463,22 @@
           "DPUCZDX8G_0/m_axi_dpu_aresetn"
         ]
       },
-      "clk_wiz_0_clk_out100": {
+      "DPUCZDX8G_0_dpu_interrupt": {
         "ports": [
-          "clk_wiz_0/clk_out100",
-          "proc_sys_reset_2/slowest_sync_clk",
-          "DPUCZDX8G_0/s_axi_aclk",
-          "processing_system7_0/M_AXI_GP0_ACLK"
+          "DPUCZDX8G_0/dpu_interrupt",
+          "processing_system7_0/Core0_nFIQ"
         ]
       },
-      "proc_sys_reset_2_peripheral_aresetn": {
+      "processing_system7_0_FCLK_CLK1": {
         "ports": [
-          "proc_sys_reset_2/peripheral_aresetn",
-          "DPUCZDX8G_0/s_axi_aresetn"
+          "processing_system7_0/FCLK_CLK1",
+          "eth0_clk"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK0": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK0",
+          "clk_wiz_0/clk_in1"
         ]
       }
     },

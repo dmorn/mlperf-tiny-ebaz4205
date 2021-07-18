@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_processing_system7_0_0_synth_1" LaunchDir="/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_DPUCZDX8G_0_0_synth_1" LaunchDir="/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_clk_wiz_0_0_synth_1" LaunchDir="/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_proc_sys_reset_0_0_synth_1" LaunchDir="/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_proc_sys_reset_1_0_synth_1" LaunchDir="/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_proc_sys_reset_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_proc_sys_reset_2_0_synth_1" LaunchDir="/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_proc_sys_reset_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

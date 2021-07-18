@@ -4076,7 +4076,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_GP0.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_GP0.FREQ_HZ">200000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>simulation.tlm</xilinx:parameterUsage>
@@ -9107,7 +9107,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FCLK_CLK0.FREQ_HZ" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PCW_CLK0_FREQ)))" spirit:minimum="100000" spirit:maximum="333000000">25000000</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FCLK_CLK0.FREQ_HZ" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PCW_CLK0_FREQ)))" spirit:minimum="100000" spirit:maximum="333000000">100000000</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -9190,7 +9190,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FCLK_CLK1.FREQ_HZ" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PCW_CLK1_FREQ)))" spirit:minimum="100000" spirit:maximum="333000000">1e+07</spirit:value>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.FCLK_CLK1.FREQ_HZ" spirit:dependency="(spirit:decode(id(PARAM_VALUE.PCW_CLK1_FREQ)))" spirit:minimum="100000" spirit:maximum="333000000">25000000</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
@@ -9250,7 +9250,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.FCLK_CLK1" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT))=1) &amp;&amp; (spirit:decode(id(PARAM_VALUE.PCW_USE_CR_FABRIC))=1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.FCLK_CLK1" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT))=1) &amp;&amp; (spirit:decode(id(PARAM_VALUE.PCW_USE_CR_FABRIC))=1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -10776,7 +10776,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.Core0_nFIQ" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CORE0_FIQ_INTR)) = 1) &amp;&amp;  (spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.Core0_nFIQ" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CORE0_FIQ_INTR)) = 1) &amp;&amp;  (spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -10932,7 +10932,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_GP0_ACLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_GP0_ACLK.FREQ_HZ">200000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -13203,7 +13203,7 @@
         <spirit:vendorExtensions>
           <xilinx:addressBlockInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="ADDRBLOCK_ENABLEMENT.S_AXI_GP0.GP0_NAND" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE)) = 1)">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="ADDRBLOCK_ENABLEMENT.S_AXI_GP0.GP0_NAND" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:addressBlockInfo>
         </spirit:vendorExtensions>
@@ -13843,7 +13843,7 @@
         <spirit:vendorExtensions>
           <xilinx:addressBlockInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="ADDRBLOCK_ENABLEMENT.S_AXI_GP1.GP1_NAND" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE)) = 1)">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="ADDRBLOCK_ENABLEMENT.S_AXI_GP1.GP1_NAND" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:addressBlockInfo>
         </spirit:vendorExtensions>
@@ -14483,7 +14483,7 @@
         <spirit:vendorExtensions>
           <xilinx:addressBlockInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="ADDRBLOCK_ENABLEMENT.S_AXI_ACP.ACP_NAND" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE)) = 1)">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="ADDRBLOCK_ENABLEMENT.S_AXI_ACP.ACP_NAND" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:addressBlockInfo>
         </spirit:vendorExtensions>
@@ -15035,11 +15035,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:06 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:22:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6ad1cd7e</spirit:value>
+            <spirit:value>9:ddbedc04</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15050,7 +15050,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6ad1cd7e</spirit:value>
+            <spirit:value>9:ddbedc04</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15066,11 +15066,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:06 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:22:45 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6ad1cd7e</spirit:value>
+            <spirit:value>9:ddbedc04</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15091,7 +15091,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f011864d</spirit:value>
+            <spirit:value>9:f6d004b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15107,11 +15107,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:07 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:22:49 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e9d09a8a</spirit:value>
+            <spirit:value>9:36bc6cbf</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15130,11 +15130,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:07 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:22:49 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f011864d</spirit:value>
+            <spirit:value>9:41a47e90</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15157,11 +15157,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:07 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:22:50 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f011864d</spirit:value>
+            <spirit:value>9:f6d004b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -15177,11 +15177,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:07 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:22:50 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e9d09a8a</spirit:value>
+            <spirit:value>9:36bc6cbf</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15200,11 +15200,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:29:09 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:23:00 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f011864d</spirit:value>
+            <spirit:value>9:41a47e90</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -15222,11 +15222,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 13 12:30:14 UTC 2021</spirit:value>
+            <spirit:value>Sun Jul 18 11:24:30 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6ad1cd7e</spirit:value>
+            <spirit:value>9:ddbedc04</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -28732,7 +28732,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Core0_nFIQ" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CORE0_FIQ_INTR)) = 1) &amp;&amp;  (spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Core0_nFIQ" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CORE0_FIQ_INTR)) = 1) &amp;&amp;  (spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -29573,7 +29573,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.FCLK_CLK1" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT))=1) &amp;&amp; (spirit:decode(id(PARAM_VALUE.PCW_USE_CR_FABRIC))=1))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.FCLK_CLK1" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT))=1) &amp;&amp; (spirit:decode(id(PARAM_VALUE.PCW_USE_CR_FABRIC))=1))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -31989,7 +31989,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="STRING">
         <spirit:name>C_FCLK_CLK1_BUF</spirit:name>
-        <spirit:value spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_FCLK_CLK1_BUF" spirit:dependency="spirit:decode(id(PARAM_VALUE.PCW_FCLK_CLK1_BUF))">FALSE</spirit:value>
+        <spirit:value spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_FCLK_CLK1_BUF" spirit:dependency="spirit:decode(id(PARAM_VALUE.PCW_FCLK_CLK1_BUF))">TRUE</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="STRING">
         <spirit:name>C_FCLK_CLK2_BUF</spirit:name>
@@ -32077,6 +32077,11 @@
       <spirit:enumeration>MIO 18 .. 19</spirit:enumeration>
       <spirit:enumeration>MIO 30 .. 31</spirit:enumeration>
       <spirit:enumeration>MIO 42 .. 43</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_2091a159</spirit:name>
+      <spirit:enumeration>&lt;Select></spirit:enumeration>
+      <spirit:enumeration>MIO 0 2.. 14</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_20dc6536</spirit:name>
@@ -33061,10 +33066,6 @@
       <spirit:enumeration>MIO 0</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_e3fc5db6</spirit:name>
-      <spirit:enumeration>MIO 0 2.. 14</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_e4dab0ce</spirit:name>
       <spirit:enumeration>0xE000AFFF</spirit:enumeration>
     </spirit:choice>
@@ -33127,21 +33128,6 @@
       <spirit:name>choice_list_f5e7200e</spirit:name>
       <spirit:enumeration>6</spirit:enumeration>
       <spirit:enumeration>12</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_f632ce2e</spirit:name>
-      <spirit:enumeration>EMIO</spirit:enumeration>
-      <spirit:enumeration>MIO 10 .. 11</spirit:enumeration>
-      <spirit:enumeration>MIO 14 .. 15</spirit:enumeration>
-      <spirit:enumeration>MIO 18 .. 19</spirit:enumeration>
-      <spirit:enumeration>MIO 22 .. 23</spirit:enumeration>
-      <spirit:enumeration>MIO 26 .. 27</spirit:enumeration>
-      <spirit:enumeration>MIO 30 .. 31</spirit:enumeration>
-      <spirit:enumeration>MIO 34 .. 35</spirit:enumeration>
-      <spirit:enumeration>MIO 38 .. 39</spirit:enumeration>
-      <spirit:enumeration>MIO 42 .. 43</spirit:enumeration>
-      <spirit:enumeration>MIO 46 .. 47</spirit:enumeration>
-      <spirit:enumeration>MIO 50 .. 51</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_f7022b26</spirit:name>
@@ -33613,7 +33599,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_BASEADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_BASEADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -33625,7 +33611,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_HIGHADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_HIGHADDR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -33981,11 +33967,11 @@
     <spirit:parameter>
       <spirit:name>PCW_FCLK_CLK1_BUF</spirit:name>
       <spirit:displayName>PCW FCLK CLK1 BUF</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK_CLK1_BUF" spirit:choiceRef="choice_list_d10f4555" spirit:order="63100">FALSE</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK_CLK1_BUF" spirit:choiceRef="choice_list_d10f4555" spirit:order="63100">TRUE</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_FCLK_CLK1_BUF" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CLK1_FREQ)) > 0)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT)) == 1)) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_FCLK_CLK1_BUF" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CLK1_FREQ)) > 0)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT)) == 1)) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -34526,7 +34512,14 @@
     <spirit:parameter>
       <spirit:name>PCW_I2C_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW I2C PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_PERIPHERAL_FREQMHZ" spirit:order="24900" spirit:minimum="0.100000" spirit:maximum="200.000000">111.111115</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_PERIPHERAL_FREQMHZ" spirit:order="24900" spirit:minimum="0.100000" spirit:maximum="200.000000">25</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C_PERIPHERAL_FREQMHZ">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_WDT_PERIPHERAL_FREQMHZ</spirit:name>
@@ -34644,12 +34637,12 @@
     <spirit:parameter>
       <spirit:name>PCW_FPGA0_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW FPGA0 PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FPGA0_PERIPHERAL_FREQMHZ" spirit:order="26000" spirit:minimum="0.100000" spirit:maximum="250.000000">25</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FPGA0_PERIPHERAL_FREQMHZ" spirit:order="26000" spirit:minimum="0.100000" spirit:maximum="250.000000">100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_FPGA1_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW FPGA1 PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FPGA1_PERIPHERAL_FREQMHZ" spirit:order="26100" spirit:minimum="0.100000" spirit:maximum="250.000000">100</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FPGA1_PERIPHERAL_FREQMHZ" spirit:order="26100" spirit:minimum="0.100000" spirit:maximum="250.000000">25</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_FPGA2_PERIPHERAL_FREQMHZ</spirit:name>
@@ -34684,7 +34677,7 @@
     <spirit:parameter>
       <spirit:name>PCW_ACT_SMC_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW ACT SMC PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ACT_SMC_PERIPHERAL_FREQMHZ" spirit:order="26800" spirit:minimum="10.000000" spirit:maximum="100.000000">100.000000</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ACT_SMC_PERIPHERAL_FREQMHZ" spirit:order="26800" spirit:minimum="10.000000" spirit:maximum="100.000000">10.000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_ACT_ENET0_PERIPHERAL_FREQMHZ</spirit:name>
@@ -34764,12 +34757,12 @@
     <spirit:parameter>
       <spirit:name>PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW ACT FPGA0 PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ" spirit:order="28200" spirit:minimum="0.100000" spirit:maximum="250.000000">25.000000</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ" spirit:order="28200" spirit:minimum="0.100000" spirit:maximum="250.000000">100.000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW ACT FPGA1 PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ" spirit:order="28300" spirit:minimum="0.100000" spirit:maximum="250.000000">10.000000</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ" spirit:order="28300" spirit:minimum="0.100000" spirit:maximum="250.000000">25.000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ</spirit:name>
@@ -34814,12 +34807,12 @@
     <spirit:parameter>
       <spirit:name>PCW_CLK0_FREQ</spirit:name>
       <spirit:displayName>PCW CLK0 FREQ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_CLK0_FREQ" spirit:order="62600" spirit:minimum="100000" spirit:maximum="333000000">25000000</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_CLK0_FREQ" spirit:order="62600" spirit:minimum="100000" spirit:maximum="333000000">100000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_CLK1_FREQ</spirit:name>
       <spirit:displayName>PCW CLK1 FREQ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_CLK1_FREQ" spirit:order="62700" spirit:minimum="100000" spirit:maximum="333000000">10000000</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_CLK1_FREQ" spirit:order="62700" spirit:minimum="100000" spirit:maximum="333000000">25000000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_CLK2_FREQ</spirit:name>
@@ -34863,7 +34856,7 @@
     <spirit:parameter>
       <spirit:name>PCW_SMC_PERIPHERAL_DIVISOR0</spirit:name>
       <spirit:displayName>CLKPARAM</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_SMC_PERIPHERAL_DIVISOR0" spirit:order="62900">12</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_SMC_PERIPHERAL_DIVISOR0" spirit:order="62900">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -34947,7 +34940,7 @@
     <spirit:parameter>
       <spirit:name>PCW_FCLK0_PERIPHERAL_DIVISOR0</spirit:name>
       <spirit:displayName>CLKPARAM</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK0_PERIPHERAL_DIVISOR0" spirit:order="62900">8</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK0_PERIPHERAL_DIVISOR0" spirit:order="62900">4</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -34959,7 +34952,7 @@
     <spirit:parameter>
       <spirit:name>PCW_FCLK1_PERIPHERAL_DIVISOR0</spirit:name>
       <spirit:displayName>CLKPARAM</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK1_PERIPHERAL_DIVISOR0" spirit:order="62900">1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK1_PERIPHERAL_DIVISOR0" spirit:order="62900">8</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -34995,7 +34988,7 @@
     <spirit:parameter>
       <spirit:name>PCW_FCLK0_PERIPHERAL_DIVISOR1</spirit:name>
       <spirit:displayName>CLKPARAM</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK0_PERIPHERAL_DIVISOR1" spirit:order="62900">6</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK0_PERIPHERAL_DIVISOR1" spirit:order="62900">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -35007,7 +35000,7 @@
     <spirit:parameter>
       <spirit:name>PCW_FCLK1_PERIPHERAL_DIVISOR1</spirit:name>
       <spirit:displayName>CLKPARAM</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK1_PERIPHERAL_DIVISOR1" spirit:order="62900">1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FCLK1_PERIPHERAL_DIVISOR1" spirit:order="62900">6</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -35246,7 +35239,7 @@
     <spirit:parameter>
       <spirit:name>PCW_SMC_PERIPHERAL_VALID</spirit:name>
       <spirit:displayName>PCW SMC PERIPHERAL VALID</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_SMC_PERIPHERAL_VALID" spirit:choiceRef="choice_list_8af5a703" spirit:order="8101">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_SMC_PERIPHERAL_VALID" spirit:choiceRef="choice_list_8af5a703" spirit:order="8101">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_SDIO_PERIPHERAL_VALID</spirit:name>
@@ -35451,7 +35444,7 @@
     <spirit:parameter>
       <spirit:name>PCW_M_AXI_GP0_FREQMHZ</spirit:name>
       <spirit:displayName>PCW M AXI GP0 FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_M_AXI_GP0_FREQMHZ" spirit:order="45601">100</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_M_AXI_GP0_FREQMHZ" spirit:order="45601">200</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -35760,7 +35753,7 @@
     <spirit:parameter>
       <spirit:name>PCW_USE_FABRIC_INTERRUPT</spirit:name>
       <spirit:displayName>PCW USE FABRIC INTERRUPT</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT" spirit:choiceRef="choice_list_8af5a703" spirit:order="48500">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT" spirit:choiceRef="choice_list_8af5a703" spirit:order="48500">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_USE_PROC_EVENT_BUS</spirit:name>
@@ -36191,7 +36184,7 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_I2C0</spirit:name>
       <spirit:displayName>PCW EN I2C0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_I2C0" spirit:choiceRef="choice_list_8af5a703" spirit:order="8800">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_I2C0" spirit:choiceRef="choice_list_8af5a703" spirit:order="8800">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_I2C1</spirit:name>
@@ -36308,7 +36301,7 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_CLK1_PORT</spirit:name>
       <spirit:displayName>PCW EN CLK1 PORT</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_CLK1_PORT" spirit:choiceRef="choice_list_8af5a703" spirit:order="60242">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_CLK1_PORT" spirit:choiceRef="choice_list_8af5a703" spirit:order="60242">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -36560,7 +36553,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_SMC_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_SMC)) = 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_SMC_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_SMC)) = 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36596,7 +36589,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_GPIO_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_GPIO)) = 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_GPIO_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_GPIO)) = 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36620,7 +36613,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_ENET0_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_ENET0)) = 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_ENET0_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_ENET0)) = 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36632,7 +36625,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_SDIO0_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_SDIO0)) = 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_SDIO0_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_SDIO0)) = 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36752,7 +36745,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_UART1_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_UART1)) = 1))">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_P2F_UART1_INTR" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_UART1)) = 1))">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36776,7 +36769,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_IRQ_F2P_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_IRQ_F2P_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36796,11 +36789,11 @@
     <spirit:parameter>
       <spirit:name>PCW_CORE0_FIQ_INTR</spirit:name>
       <spirit:displayName>PCW CORE0 FIQ INTR</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_CORE0_FIQ_INTR" spirit:choiceRef="choice_list_8af5a703" spirit:order="60281">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_CORE0_FIQ_INTR" spirit:choiceRef="choice_list_8af5a703" spirit:order="60281">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE0_FIQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE0_FIQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36812,7 +36805,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE0_IRQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE0_IRQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36824,7 +36817,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE1_FIQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE1_FIQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -36836,7 +36829,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE1_IRQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_CORE1_IRQ_INTR" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -37172,16 +37165,30 @@
     <spirit:parameter>
       <spirit:name>PCW_NAND_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW NAND PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="100">1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_NAND_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="100">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_NAND_NAND_IO</spirit:name>
       <spirit:displayName>PCW NAND NAND IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_NAND_NAND_IO" spirit:choiceRef="choice_list_e3fc5db6" spirit:order="6000">MIO 0 2.. 14</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_NAND_NAND_IO" spirit:choiceRef="choice_list_2091a159" spirit:order="6000">&lt;Select></spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_NAND_NAND_IO">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_NAND_GRP_D8_ENABLE</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_NAND_GRP_D8_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="6001">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_NAND_GRP_D8_ENABLE">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_NAND_GRP_D8_IO</spirit:name>
@@ -37199,13 +37206,6 @@
       <spirit:name>PCW_NOR_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW NOR PERIPHERAL ENABLE</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_NOR_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="200">0</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_NOR_PERIPHERAL_ENABLE">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_NOR_NOR_IO</spirit:name>
@@ -37362,13 +37362,6 @@
       <spirit:name>PCW_QSPI_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW QSPI PERIPHERAL ENABLE</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_QSPI_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="300">0</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_QSPI_PERIPHERAL_ENABLE">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_QSPI_QSPI_IO</spirit:name>
@@ -38367,16 +38360,30 @@
     <spirit:parameter>
       <spirit:name>PCW_I2C0_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW I2C0 PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="2000">1</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="2000">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_I2C0_IO</spirit:name>
       <spirit:displayName>PCW I2C0 I2C0 IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_I2C0_IO" spirit:choiceRef="choice_list_f632ce2e" spirit:order="6900">MIO 26 .. 27</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_I2C0_IO" spirit:choiceRef="choice_list_5d0f73c4" spirit:order="6900">&lt;Select></spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_I2C0_IO">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_GRP_INT_ENABLE</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="6901">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_GRP_INT_ENABLE">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_GRP_INT_IO</spirit:name>
@@ -38444,7 +38451,14 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C_RESET_SELECT</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_RESET_SELECT" spirit:choiceRef="choice_list_ce2e47bd" spirit:order="6103">Share reset pin</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_RESET_SELECT" spirit:choiceRef="choice_list_fe5d5471" spirit:order="6103">&lt;Select></spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C_RESET_SELECT">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C1_RESET_ENABLE</spirit:name>
@@ -40213,11 +40227,11 @@
     <spirit:parameter>
       <spirit:name>PCW_FPGA_FCLK1_ENABLE</spirit:name>
       <spirit:displayName>PCW FPGA FCLK1 ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FPGA_FCLK1_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="63101">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_FPGA_FCLK1_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="63101">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_FPGA_FCLK1_ENABLE" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CLK1_FREQ)) > 0)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT)) == 1)) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.PCW_FPGA_FCLK1_ENABLE" xilinx:dependency="((spirit:decode(id(PARAM_VALUE.PCW_CLK1_FREQ)) > 0)&amp;&amp;(spirit:decode(id(PARAM_VALUE.PCW_EN_CLK1_PORT)) == 1)) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -40482,6 +40496,8 @@
       <xilinx:coreRevision>6</xilinx:coreRevision>
       <xilinx:requiresVIP>true</xilinx:requiresVIP>
       <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CORE0_NFIQ.PortWidth" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CORE0_NFIQ.SENSITIVITY" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DDR.AXI_ARBITRATION_SCHEME" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DDR.BURST_LENGTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DDR.CAN_DEBUG" xilinx:valuePermission="bd"/>
@@ -40753,6 +40769,7 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CLK1_FREQ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CLK2_FREQ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CLK3_FREQ" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CORE0_FIQ_INTR" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CPU_CPU_PLL_FREQMHZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_CPU_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_DCI_PERIPHERAL_DIVISOR0" xilinx:valueSource="user"/>
@@ -41106,6 +41123,7 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USB1_RESET_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USB_RESET_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USE_DMA0" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USE_M_AXI_GP0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USE_S_AXI_GP0" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_USE_S_AXI_HP0" xilinx:valueSource="user"/>

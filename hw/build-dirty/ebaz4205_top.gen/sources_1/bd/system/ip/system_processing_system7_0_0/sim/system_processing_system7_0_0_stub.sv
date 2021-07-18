@@ -85,7 +85,183 @@ module system_processing_system7_0_0 (
   input bit [63 : 0] GPIO_I,
   output bit [63 : 0] GPIO_O,
   output bit [63 : 0] GPIO_T,
+  output bit_as_bool M_AXI_GP0_ARVALID,
+  output bit_as_bool M_AXI_GP0_AWVALID,
+  output bit_as_bool M_AXI_GP0_BREADY,
+  output bit_as_bool M_AXI_GP0_RREADY,
+  output bit_as_bool M_AXI_GP0_WLAST,
+  output bit_as_bool M_AXI_GP0_WVALID,
+  output bit [11 : 0] M_AXI_GP0_ARID,
+  output bit [11 : 0] M_AXI_GP0_AWID,
+  output bit [11 : 0] M_AXI_GP0_WID,
+  output bit [1 : 0] M_AXI_GP0_ARBURST,
+  output bit [1 : 0] M_AXI_GP0_ARLOCK,
+  output bit [2 : 0] M_AXI_GP0_ARSIZE,
+  output bit [1 : 0] M_AXI_GP0_AWBURST,
+  output bit [1 : 0] M_AXI_GP0_AWLOCK,
+  output bit [2 : 0] M_AXI_GP0_AWSIZE,
+  output bit [2 : 0] M_AXI_GP0_ARPROT,
+  output bit [2 : 0] M_AXI_GP0_AWPROT,
+  output bit [31 : 0] M_AXI_GP0_ARADDR,
+  output bit [31 : 0] M_AXI_GP0_AWADDR,
+  output bit [31 : 0] M_AXI_GP0_WDATA,
+  output bit [3 : 0] M_AXI_GP0_ARCACHE,
+  output bit [3 : 0] M_AXI_GP0_ARLEN,
+  output bit [3 : 0] M_AXI_GP0_ARQOS,
+  output bit [3 : 0] M_AXI_GP0_AWCACHE,
+  output bit [3 : 0] M_AXI_GP0_AWLEN,
+  output bit [3 : 0] M_AXI_GP0_AWQOS,
+  output bit [3 : 0] M_AXI_GP0_WSTRB,
+  input bit_as_bool M_AXI_GP0_ACLK,
+  input bit_as_bool M_AXI_GP0_ARREADY,
+  input bit_as_bool M_AXI_GP0_AWREADY,
+  input bit_as_bool M_AXI_GP0_BVALID,
+  input bit_as_bool M_AXI_GP0_RLAST,
+  input bit_as_bool M_AXI_GP0_RVALID,
+  input bit_as_bool M_AXI_GP0_WREADY,
+  input bit [11 : 0] M_AXI_GP0_BID,
+  input bit [11 : 0] M_AXI_GP0_RID,
+  input bit [1 : 0] M_AXI_GP0_BRESP,
+  input bit [1 : 0] M_AXI_GP0_RRESP,
+  input bit [31 : 0] M_AXI_GP0_RDATA,
+  output bit_as_bool S_AXI_HP0_ARREADY,
+  output bit_as_bool S_AXI_HP0_AWREADY,
+  output bit_as_bool S_AXI_HP0_BVALID,
+  output bit_as_bool S_AXI_HP0_RLAST,
+  output bit_as_bool S_AXI_HP0_RVALID,
+  output bit_as_bool S_AXI_HP0_WREADY,
+  output bit [1 : 0] S_AXI_HP0_BRESP,
+  output bit [1 : 0] S_AXI_HP0_RRESP,
+  output bit [5 : 0] S_AXI_HP0_BID,
+  output bit [5 : 0] S_AXI_HP0_RID,
+  output bit [63 : 0] S_AXI_HP0_RDATA,
+  output bit [7 : 0] S_AXI_HP0_RCOUNT,
+  output bit [7 : 0] S_AXI_HP0_WCOUNT,
+  output bit [2 : 0] S_AXI_HP0_RACOUNT,
+  output bit [5 : 0] S_AXI_HP0_WACOUNT,
+  input bit_as_bool S_AXI_HP0_ACLK,
+  input bit_as_bool S_AXI_HP0_ARVALID,
+  input bit_as_bool S_AXI_HP0_AWVALID,
+  input bit_as_bool S_AXI_HP0_BREADY,
+  input bit_as_bool S_AXI_HP0_RDISSUECAP1_EN,
+  input bit_as_bool S_AXI_HP0_RREADY,
+  input bit_as_bool S_AXI_HP0_WLAST,
+  input bit_as_bool S_AXI_HP0_WRISSUECAP1_EN,
+  input bit_as_bool S_AXI_HP0_WVALID,
+  input bit [1 : 0] S_AXI_HP0_ARBURST,
+  input bit [1 : 0] S_AXI_HP0_ARLOCK,
+  input bit [2 : 0] S_AXI_HP0_ARSIZE,
+  input bit [1 : 0] S_AXI_HP0_AWBURST,
+  input bit [1 : 0] S_AXI_HP0_AWLOCK,
+  input bit [2 : 0] S_AXI_HP0_AWSIZE,
+  input bit [2 : 0] S_AXI_HP0_ARPROT,
+  input bit [2 : 0] S_AXI_HP0_AWPROT,
+  input bit [31 : 0] S_AXI_HP0_ARADDR,
+  input bit [31 : 0] S_AXI_HP0_AWADDR,
+  input bit [3 : 0] S_AXI_HP0_ARCACHE,
+  input bit [3 : 0] S_AXI_HP0_ARLEN,
+  input bit [3 : 0] S_AXI_HP0_ARQOS,
+  input bit [3 : 0] S_AXI_HP0_AWCACHE,
+  input bit [3 : 0] S_AXI_HP0_AWLEN,
+  input bit [3 : 0] S_AXI_HP0_AWQOS,
+  input bit [5 : 0] S_AXI_HP0_ARID,
+  input bit [5 : 0] S_AXI_HP0_AWID,
+  input bit [5 : 0] S_AXI_HP0_WID,
+  input bit [63 : 0] S_AXI_HP0_WDATA,
+  input bit [7 : 0] S_AXI_HP0_WSTRB,
+  output bit_as_bool S_AXI_HP1_ARREADY,
+  output bit_as_bool S_AXI_HP1_AWREADY,
+  output bit_as_bool S_AXI_HP1_BVALID,
+  output bit_as_bool S_AXI_HP1_RLAST,
+  output bit_as_bool S_AXI_HP1_RVALID,
+  output bit_as_bool S_AXI_HP1_WREADY,
+  output bit [1 : 0] S_AXI_HP1_BRESP,
+  output bit [1 : 0] S_AXI_HP1_RRESP,
+  output bit [5 : 0] S_AXI_HP1_BID,
+  output bit [5 : 0] S_AXI_HP1_RID,
+  output bit [63 : 0] S_AXI_HP1_RDATA,
+  output bit [7 : 0] S_AXI_HP1_RCOUNT,
+  output bit [7 : 0] S_AXI_HP1_WCOUNT,
+  output bit [2 : 0] S_AXI_HP1_RACOUNT,
+  output bit [5 : 0] S_AXI_HP1_WACOUNT,
+  input bit_as_bool S_AXI_HP1_ACLK,
+  input bit_as_bool S_AXI_HP1_ARVALID,
+  input bit_as_bool S_AXI_HP1_AWVALID,
+  input bit_as_bool S_AXI_HP1_BREADY,
+  input bit_as_bool S_AXI_HP1_RDISSUECAP1_EN,
+  input bit_as_bool S_AXI_HP1_RREADY,
+  input bit_as_bool S_AXI_HP1_WLAST,
+  input bit_as_bool S_AXI_HP1_WRISSUECAP1_EN,
+  input bit_as_bool S_AXI_HP1_WVALID,
+  input bit [1 : 0] S_AXI_HP1_ARBURST,
+  input bit [1 : 0] S_AXI_HP1_ARLOCK,
+  input bit [2 : 0] S_AXI_HP1_ARSIZE,
+  input bit [1 : 0] S_AXI_HP1_AWBURST,
+  input bit [1 : 0] S_AXI_HP1_AWLOCK,
+  input bit [2 : 0] S_AXI_HP1_AWSIZE,
+  input bit [2 : 0] S_AXI_HP1_ARPROT,
+  input bit [2 : 0] S_AXI_HP1_AWPROT,
+  input bit [31 : 0] S_AXI_HP1_ARADDR,
+  input bit [31 : 0] S_AXI_HP1_AWADDR,
+  input bit [3 : 0] S_AXI_HP1_ARCACHE,
+  input bit [3 : 0] S_AXI_HP1_ARLEN,
+  input bit [3 : 0] S_AXI_HP1_ARQOS,
+  input bit [3 : 0] S_AXI_HP1_AWCACHE,
+  input bit [3 : 0] S_AXI_HP1_AWLEN,
+  input bit [3 : 0] S_AXI_HP1_AWQOS,
+  input bit [5 : 0] S_AXI_HP1_ARID,
+  input bit [5 : 0] S_AXI_HP1_AWID,
+  input bit [5 : 0] S_AXI_HP1_WID,
+  input bit [63 : 0] S_AXI_HP1_WDATA,
+  input bit [7 : 0] S_AXI_HP1_WSTRB,
+  output bit_as_bool S_AXI_HP2_ARREADY,
+  output bit_as_bool S_AXI_HP2_AWREADY,
+  output bit_as_bool S_AXI_HP2_BVALID,
+  output bit_as_bool S_AXI_HP2_RLAST,
+  output bit_as_bool S_AXI_HP2_RVALID,
+  output bit_as_bool S_AXI_HP2_WREADY,
+  output bit [1 : 0] S_AXI_HP2_BRESP,
+  output bit [1 : 0] S_AXI_HP2_RRESP,
+  output bit [5 : 0] S_AXI_HP2_BID,
+  output bit [5 : 0] S_AXI_HP2_RID,
+  output bit [31 : 0] S_AXI_HP2_RDATA,
+  output bit [7 : 0] S_AXI_HP2_RCOUNT,
+  output bit [7 : 0] S_AXI_HP2_WCOUNT,
+  output bit [2 : 0] S_AXI_HP2_RACOUNT,
+  output bit [5 : 0] S_AXI_HP2_WACOUNT,
+  input bit_as_bool S_AXI_HP2_ACLK,
+  input bit_as_bool S_AXI_HP2_ARVALID,
+  input bit_as_bool S_AXI_HP2_AWVALID,
+  input bit_as_bool S_AXI_HP2_BREADY,
+  input bit_as_bool S_AXI_HP2_RDISSUECAP1_EN,
+  input bit_as_bool S_AXI_HP2_RREADY,
+  input bit_as_bool S_AXI_HP2_WLAST,
+  input bit_as_bool S_AXI_HP2_WRISSUECAP1_EN,
+  input bit_as_bool S_AXI_HP2_WVALID,
+  input bit [1 : 0] S_AXI_HP2_ARBURST,
+  input bit [1 : 0] S_AXI_HP2_ARLOCK,
+  input bit [2 : 0] S_AXI_HP2_ARSIZE,
+  input bit [1 : 0] S_AXI_HP2_AWBURST,
+  input bit [1 : 0] S_AXI_HP2_AWLOCK,
+  input bit [2 : 0] S_AXI_HP2_AWSIZE,
+  input bit [2 : 0] S_AXI_HP2_ARPROT,
+  input bit [2 : 0] S_AXI_HP2_AWPROT,
+  input bit [31 : 0] S_AXI_HP2_ARADDR,
+  input bit [31 : 0] S_AXI_HP2_AWADDR,
+  input bit [3 : 0] S_AXI_HP2_ARCACHE,
+  input bit [3 : 0] S_AXI_HP2_ARLEN,
+  input bit [3 : 0] S_AXI_HP2_ARQOS,
+  input bit [3 : 0] S_AXI_HP2_AWCACHE,
+  input bit [3 : 0] S_AXI_HP2_AWLEN,
+  input bit [3 : 0] S_AXI_HP2_AWQOS,
+  input bit [5 : 0] S_AXI_HP2_ARID,
+  input bit [5 : 0] S_AXI_HP2_AWID,
+  input bit [5 : 0] S_AXI_HP2_WID,
+  input bit [31 : 0] S_AXI_HP2_WDATA,
+  input bit [3 : 0] S_AXI_HP2_WSTRB,
+  input bit_as_bool Core0_nFIQ,
   output bit_as_bool FCLK_CLK0,
+  output bit_as_bool FCLK_CLK1,
   output bit_as_bool FCLK_RESET0_N,
   output bit [53 : 0] MIO,
   output bit_as_bool DDR_CAS_n,
@@ -114,7 +290,7 @@ endmodule
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module system_processing_system7_0_0 (ENET0_GMII_TX_EN,ENET0_GMII_TX_ER,ENET0_MDIO_MDC,ENET0_MDIO_O,ENET0_MDIO_T,ENET0_GMII_TXD,ENET0_GMII_COL,ENET0_GMII_CRS,ENET0_GMII_RX_CLK,ENET0_GMII_RX_DV,ENET0_GMII_RX_ER,ENET0_GMII_TX_CLK,ENET0_MDIO_I,ENET0_EXT_INTIN,ENET0_GMII_RXD,GPIO_I,GPIO_O,GPIO_T,FCLK_CLK0,FCLK_RESET0_N,MIO,DDR_CAS_n,DDR_CKE,DDR_Clk_n,DDR_Clk,DDR_CS_n,DDR_DRSTB,DDR_ODT,DDR_RAS_n,DDR_WEB,DDR_BankAddr,DDR_Addr,DDR_VRN,DDR_VRP,DDR_DM,DDR_DQ,DDR_DQS_n,DDR_DQS,PS_SRSTB,PS_CLK,PS_PORB)
+module system_processing_system7_0_0 (ENET0_GMII_TX_EN,ENET0_GMII_TX_ER,ENET0_MDIO_MDC,ENET0_MDIO_O,ENET0_MDIO_T,ENET0_GMII_TXD,ENET0_GMII_COL,ENET0_GMII_CRS,ENET0_GMII_RX_CLK,ENET0_GMII_RX_DV,ENET0_GMII_RX_ER,ENET0_GMII_TX_CLK,ENET0_MDIO_I,ENET0_EXT_INTIN,ENET0_GMII_RXD,GPIO_I,GPIO_O,GPIO_T,M_AXI_GP0_ARVALID,M_AXI_GP0_AWVALID,M_AXI_GP0_BREADY,M_AXI_GP0_RREADY,M_AXI_GP0_WLAST,M_AXI_GP0_WVALID,M_AXI_GP0_ARID,M_AXI_GP0_AWID,M_AXI_GP0_WID,M_AXI_GP0_ARBURST,M_AXI_GP0_ARLOCK,M_AXI_GP0_ARSIZE,M_AXI_GP0_AWBURST,M_AXI_GP0_AWLOCK,M_AXI_GP0_AWSIZE,M_AXI_GP0_ARPROT,M_AXI_GP0_AWPROT,M_AXI_GP0_ARADDR,M_AXI_GP0_AWADDR,M_AXI_GP0_WDATA,M_AXI_GP0_ARCACHE,M_AXI_GP0_ARLEN,M_AXI_GP0_ARQOS,M_AXI_GP0_AWCACHE,M_AXI_GP0_AWLEN,M_AXI_GP0_AWQOS,M_AXI_GP0_WSTRB,M_AXI_GP0_ACLK,M_AXI_GP0_ARREADY,M_AXI_GP0_AWREADY,M_AXI_GP0_BVALID,M_AXI_GP0_RLAST,M_AXI_GP0_RVALID,M_AXI_GP0_WREADY,M_AXI_GP0_BID,M_AXI_GP0_RID,M_AXI_GP0_BRESP,M_AXI_GP0_RRESP,M_AXI_GP0_RDATA,S_AXI_HP0_ARREADY,S_AXI_HP0_AWREADY,S_AXI_HP0_BVALID,S_AXI_HP0_RLAST,S_AXI_HP0_RVALID,S_AXI_HP0_WREADY,S_AXI_HP0_BRESP,S_AXI_HP0_RRESP,S_AXI_HP0_BID,S_AXI_HP0_RID,S_AXI_HP0_RDATA,S_AXI_HP0_RCOUNT,S_AXI_HP0_WCOUNT,S_AXI_HP0_RACOUNT,S_AXI_HP0_WACOUNT,S_AXI_HP0_ACLK,S_AXI_HP0_ARVALID,S_AXI_HP0_AWVALID,S_AXI_HP0_BREADY,S_AXI_HP0_RDISSUECAP1_EN,S_AXI_HP0_RREADY,S_AXI_HP0_WLAST,S_AXI_HP0_WRISSUECAP1_EN,S_AXI_HP0_WVALID,S_AXI_HP0_ARBURST,S_AXI_HP0_ARLOCK,S_AXI_HP0_ARSIZE,S_AXI_HP0_AWBURST,S_AXI_HP0_AWLOCK,S_AXI_HP0_AWSIZE,S_AXI_HP0_ARPROT,S_AXI_HP0_AWPROT,S_AXI_HP0_ARADDR,S_AXI_HP0_AWADDR,S_AXI_HP0_ARCACHE,S_AXI_HP0_ARLEN,S_AXI_HP0_ARQOS,S_AXI_HP0_AWCACHE,S_AXI_HP0_AWLEN,S_AXI_HP0_AWQOS,S_AXI_HP0_ARID,S_AXI_HP0_AWID,S_AXI_HP0_WID,S_AXI_HP0_WDATA,S_AXI_HP0_WSTRB,S_AXI_HP1_ARREADY,S_AXI_HP1_AWREADY,S_AXI_HP1_BVALID,S_AXI_HP1_RLAST,S_AXI_HP1_RVALID,S_AXI_HP1_WREADY,S_AXI_HP1_BRESP,S_AXI_HP1_RRESP,S_AXI_HP1_BID,S_AXI_HP1_RID,S_AXI_HP1_RDATA,S_AXI_HP1_RCOUNT,S_AXI_HP1_WCOUNT,S_AXI_HP1_RACOUNT,S_AXI_HP1_WACOUNT,S_AXI_HP1_ACLK,S_AXI_HP1_ARVALID,S_AXI_HP1_AWVALID,S_AXI_HP1_BREADY,S_AXI_HP1_RDISSUECAP1_EN,S_AXI_HP1_RREADY,S_AXI_HP1_WLAST,S_AXI_HP1_WRISSUECAP1_EN,S_AXI_HP1_WVALID,S_AXI_HP1_ARBURST,S_AXI_HP1_ARLOCK,S_AXI_HP1_ARSIZE,S_AXI_HP1_AWBURST,S_AXI_HP1_AWLOCK,S_AXI_HP1_AWSIZE,S_AXI_HP1_ARPROT,S_AXI_HP1_AWPROT,S_AXI_HP1_ARADDR,S_AXI_HP1_AWADDR,S_AXI_HP1_ARCACHE,S_AXI_HP1_ARLEN,S_AXI_HP1_ARQOS,S_AXI_HP1_AWCACHE,S_AXI_HP1_AWLEN,S_AXI_HP1_AWQOS,S_AXI_HP1_ARID,S_AXI_HP1_AWID,S_AXI_HP1_WID,S_AXI_HP1_WDATA,S_AXI_HP1_WSTRB,S_AXI_HP2_ARREADY,S_AXI_HP2_AWREADY,S_AXI_HP2_BVALID,S_AXI_HP2_RLAST,S_AXI_HP2_RVALID,S_AXI_HP2_WREADY,S_AXI_HP2_BRESP,S_AXI_HP2_RRESP,S_AXI_HP2_BID,S_AXI_HP2_RID,S_AXI_HP2_RDATA,S_AXI_HP2_RCOUNT,S_AXI_HP2_WCOUNT,S_AXI_HP2_RACOUNT,S_AXI_HP2_WACOUNT,S_AXI_HP2_ACLK,S_AXI_HP2_ARVALID,S_AXI_HP2_AWVALID,S_AXI_HP2_BREADY,S_AXI_HP2_RDISSUECAP1_EN,S_AXI_HP2_RREADY,S_AXI_HP2_WLAST,S_AXI_HP2_WRISSUECAP1_EN,S_AXI_HP2_WVALID,S_AXI_HP2_ARBURST,S_AXI_HP2_ARLOCK,S_AXI_HP2_ARSIZE,S_AXI_HP2_AWBURST,S_AXI_HP2_AWLOCK,S_AXI_HP2_AWSIZE,S_AXI_HP2_ARPROT,S_AXI_HP2_AWPROT,S_AXI_HP2_ARADDR,S_AXI_HP2_AWADDR,S_AXI_HP2_ARCACHE,S_AXI_HP2_ARLEN,S_AXI_HP2_ARQOS,S_AXI_HP2_AWCACHE,S_AXI_HP2_AWLEN,S_AXI_HP2_AWQOS,S_AXI_HP2_ARID,S_AXI_HP2_AWID,S_AXI_HP2_WID,S_AXI_HP2_WDATA,S_AXI_HP2_WSTRB,Core0_nFIQ,FCLK_CLK0,FCLK_CLK1,FCLK_RESET0_N,MIO,DDR_CAS_n,DDR_CKE,DDR_Clk_n,DDR_Clk,DDR_CS_n,DDR_DRSTB,DDR_ODT,DDR_RAS_n,DDR_WEB,DDR_BankAddr,DDR_Addr,DDR_VRN,DDR_VRP,DDR_DM,DDR_DQ,DDR_DQS_n,DDR_DQS,PS_SRSTB,PS_CLK,PS_PORB)
 (* integer foreign = "SystemC";
 *);
   output wire [0 : 0] ENET0_GMII_TX_EN;
@@ -135,7 +311,183 @@ module system_processing_system7_0_0 (ENET0_GMII_TX_EN,ENET0_GMII_TX_ER,ENET0_MD
   input bit [63 : 0] GPIO_I;
   output wire [63 : 0] GPIO_O;
   output wire [63 : 0] GPIO_T;
+  output wire M_AXI_GP0_ARVALID;
+  output wire M_AXI_GP0_AWVALID;
+  output wire M_AXI_GP0_BREADY;
+  output wire M_AXI_GP0_RREADY;
+  output wire M_AXI_GP0_WLAST;
+  output wire M_AXI_GP0_WVALID;
+  output wire [11 : 0] M_AXI_GP0_ARID;
+  output wire [11 : 0] M_AXI_GP0_AWID;
+  output wire [11 : 0] M_AXI_GP0_WID;
+  output wire [1 : 0] M_AXI_GP0_ARBURST;
+  output wire [1 : 0] M_AXI_GP0_ARLOCK;
+  output wire [2 : 0] M_AXI_GP0_ARSIZE;
+  output wire [1 : 0] M_AXI_GP0_AWBURST;
+  output wire [1 : 0] M_AXI_GP0_AWLOCK;
+  output wire [2 : 0] M_AXI_GP0_AWSIZE;
+  output wire [2 : 0] M_AXI_GP0_ARPROT;
+  output wire [2 : 0] M_AXI_GP0_AWPROT;
+  output wire [31 : 0] M_AXI_GP0_ARADDR;
+  output wire [31 : 0] M_AXI_GP0_AWADDR;
+  output wire [31 : 0] M_AXI_GP0_WDATA;
+  output wire [3 : 0] M_AXI_GP0_ARCACHE;
+  output wire [3 : 0] M_AXI_GP0_ARLEN;
+  output wire [3 : 0] M_AXI_GP0_ARQOS;
+  output wire [3 : 0] M_AXI_GP0_AWCACHE;
+  output wire [3 : 0] M_AXI_GP0_AWLEN;
+  output wire [3 : 0] M_AXI_GP0_AWQOS;
+  output wire [3 : 0] M_AXI_GP0_WSTRB;
+  input bit M_AXI_GP0_ACLK;
+  input bit M_AXI_GP0_ARREADY;
+  input bit M_AXI_GP0_AWREADY;
+  input bit M_AXI_GP0_BVALID;
+  input bit M_AXI_GP0_RLAST;
+  input bit M_AXI_GP0_RVALID;
+  input bit M_AXI_GP0_WREADY;
+  input bit [11 : 0] M_AXI_GP0_BID;
+  input bit [11 : 0] M_AXI_GP0_RID;
+  input bit [1 : 0] M_AXI_GP0_BRESP;
+  input bit [1 : 0] M_AXI_GP0_RRESP;
+  input bit [31 : 0] M_AXI_GP0_RDATA;
+  output wire S_AXI_HP0_ARREADY;
+  output wire S_AXI_HP0_AWREADY;
+  output wire S_AXI_HP0_BVALID;
+  output wire S_AXI_HP0_RLAST;
+  output wire S_AXI_HP0_RVALID;
+  output wire S_AXI_HP0_WREADY;
+  output wire [1 : 0] S_AXI_HP0_BRESP;
+  output wire [1 : 0] S_AXI_HP0_RRESP;
+  output wire [5 : 0] S_AXI_HP0_BID;
+  output wire [5 : 0] S_AXI_HP0_RID;
+  output wire [63 : 0] S_AXI_HP0_RDATA;
+  output wire [7 : 0] S_AXI_HP0_RCOUNT;
+  output wire [7 : 0] S_AXI_HP0_WCOUNT;
+  output wire [2 : 0] S_AXI_HP0_RACOUNT;
+  output wire [5 : 0] S_AXI_HP0_WACOUNT;
+  input bit S_AXI_HP0_ACLK;
+  input bit S_AXI_HP0_ARVALID;
+  input bit S_AXI_HP0_AWVALID;
+  input bit S_AXI_HP0_BREADY;
+  input bit S_AXI_HP0_RDISSUECAP1_EN;
+  input bit S_AXI_HP0_RREADY;
+  input bit S_AXI_HP0_WLAST;
+  input bit S_AXI_HP0_WRISSUECAP1_EN;
+  input bit S_AXI_HP0_WVALID;
+  input bit [1 : 0] S_AXI_HP0_ARBURST;
+  input bit [1 : 0] S_AXI_HP0_ARLOCK;
+  input bit [2 : 0] S_AXI_HP0_ARSIZE;
+  input bit [1 : 0] S_AXI_HP0_AWBURST;
+  input bit [1 : 0] S_AXI_HP0_AWLOCK;
+  input bit [2 : 0] S_AXI_HP0_AWSIZE;
+  input bit [2 : 0] S_AXI_HP0_ARPROT;
+  input bit [2 : 0] S_AXI_HP0_AWPROT;
+  input bit [31 : 0] S_AXI_HP0_ARADDR;
+  input bit [31 : 0] S_AXI_HP0_AWADDR;
+  input bit [3 : 0] S_AXI_HP0_ARCACHE;
+  input bit [3 : 0] S_AXI_HP0_ARLEN;
+  input bit [3 : 0] S_AXI_HP0_ARQOS;
+  input bit [3 : 0] S_AXI_HP0_AWCACHE;
+  input bit [3 : 0] S_AXI_HP0_AWLEN;
+  input bit [3 : 0] S_AXI_HP0_AWQOS;
+  input bit [5 : 0] S_AXI_HP0_ARID;
+  input bit [5 : 0] S_AXI_HP0_AWID;
+  input bit [5 : 0] S_AXI_HP0_WID;
+  input bit [63 : 0] S_AXI_HP0_WDATA;
+  input bit [7 : 0] S_AXI_HP0_WSTRB;
+  output wire S_AXI_HP1_ARREADY;
+  output wire S_AXI_HP1_AWREADY;
+  output wire S_AXI_HP1_BVALID;
+  output wire S_AXI_HP1_RLAST;
+  output wire S_AXI_HP1_RVALID;
+  output wire S_AXI_HP1_WREADY;
+  output wire [1 : 0] S_AXI_HP1_BRESP;
+  output wire [1 : 0] S_AXI_HP1_RRESP;
+  output wire [5 : 0] S_AXI_HP1_BID;
+  output wire [5 : 0] S_AXI_HP1_RID;
+  output wire [63 : 0] S_AXI_HP1_RDATA;
+  output wire [7 : 0] S_AXI_HP1_RCOUNT;
+  output wire [7 : 0] S_AXI_HP1_WCOUNT;
+  output wire [2 : 0] S_AXI_HP1_RACOUNT;
+  output wire [5 : 0] S_AXI_HP1_WACOUNT;
+  input bit S_AXI_HP1_ACLK;
+  input bit S_AXI_HP1_ARVALID;
+  input bit S_AXI_HP1_AWVALID;
+  input bit S_AXI_HP1_BREADY;
+  input bit S_AXI_HP1_RDISSUECAP1_EN;
+  input bit S_AXI_HP1_RREADY;
+  input bit S_AXI_HP1_WLAST;
+  input bit S_AXI_HP1_WRISSUECAP1_EN;
+  input bit S_AXI_HP1_WVALID;
+  input bit [1 : 0] S_AXI_HP1_ARBURST;
+  input bit [1 : 0] S_AXI_HP1_ARLOCK;
+  input bit [2 : 0] S_AXI_HP1_ARSIZE;
+  input bit [1 : 0] S_AXI_HP1_AWBURST;
+  input bit [1 : 0] S_AXI_HP1_AWLOCK;
+  input bit [2 : 0] S_AXI_HP1_AWSIZE;
+  input bit [2 : 0] S_AXI_HP1_ARPROT;
+  input bit [2 : 0] S_AXI_HP1_AWPROT;
+  input bit [31 : 0] S_AXI_HP1_ARADDR;
+  input bit [31 : 0] S_AXI_HP1_AWADDR;
+  input bit [3 : 0] S_AXI_HP1_ARCACHE;
+  input bit [3 : 0] S_AXI_HP1_ARLEN;
+  input bit [3 : 0] S_AXI_HP1_ARQOS;
+  input bit [3 : 0] S_AXI_HP1_AWCACHE;
+  input bit [3 : 0] S_AXI_HP1_AWLEN;
+  input bit [3 : 0] S_AXI_HP1_AWQOS;
+  input bit [5 : 0] S_AXI_HP1_ARID;
+  input bit [5 : 0] S_AXI_HP1_AWID;
+  input bit [5 : 0] S_AXI_HP1_WID;
+  input bit [63 : 0] S_AXI_HP1_WDATA;
+  input bit [7 : 0] S_AXI_HP1_WSTRB;
+  output wire S_AXI_HP2_ARREADY;
+  output wire S_AXI_HP2_AWREADY;
+  output wire S_AXI_HP2_BVALID;
+  output wire S_AXI_HP2_RLAST;
+  output wire S_AXI_HP2_RVALID;
+  output wire S_AXI_HP2_WREADY;
+  output wire [1 : 0] S_AXI_HP2_BRESP;
+  output wire [1 : 0] S_AXI_HP2_RRESP;
+  output wire [5 : 0] S_AXI_HP2_BID;
+  output wire [5 : 0] S_AXI_HP2_RID;
+  output wire [31 : 0] S_AXI_HP2_RDATA;
+  output wire [7 : 0] S_AXI_HP2_RCOUNT;
+  output wire [7 : 0] S_AXI_HP2_WCOUNT;
+  output wire [2 : 0] S_AXI_HP2_RACOUNT;
+  output wire [5 : 0] S_AXI_HP2_WACOUNT;
+  input bit S_AXI_HP2_ACLK;
+  input bit S_AXI_HP2_ARVALID;
+  input bit S_AXI_HP2_AWVALID;
+  input bit S_AXI_HP2_BREADY;
+  input bit S_AXI_HP2_RDISSUECAP1_EN;
+  input bit S_AXI_HP2_RREADY;
+  input bit S_AXI_HP2_WLAST;
+  input bit S_AXI_HP2_WRISSUECAP1_EN;
+  input bit S_AXI_HP2_WVALID;
+  input bit [1 : 0] S_AXI_HP2_ARBURST;
+  input bit [1 : 0] S_AXI_HP2_ARLOCK;
+  input bit [2 : 0] S_AXI_HP2_ARSIZE;
+  input bit [1 : 0] S_AXI_HP2_AWBURST;
+  input bit [1 : 0] S_AXI_HP2_AWLOCK;
+  input bit [2 : 0] S_AXI_HP2_AWSIZE;
+  input bit [2 : 0] S_AXI_HP2_ARPROT;
+  input bit [2 : 0] S_AXI_HP2_AWPROT;
+  input bit [31 : 0] S_AXI_HP2_ARADDR;
+  input bit [31 : 0] S_AXI_HP2_AWADDR;
+  input bit [3 : 0] S_AXI_HP2_ARCACHE;
+  input bit [3 : 0] S_AXI_HP2_ARLEN;
+  input bit [3 : 0] S_AXI_HP2_ARQOS;
+  input bit [3 : 0] S_AXI_HP2_AWCACHE;
+  input bit [3 : 0] S_AXI_HP2_AWLEN;
+  input bit [3 : 0] S_AXI_HP2_AWQOS;
+  input bit [5 : 0] S_AXI_HP2_ARID;
+  input bit [5 : 0] S_AXI_HP2_AWID;
+  input bit [5 : 0] S_AXI_HP2_WID;
+  input bit [31 : 0] S_AXI_HP2_WDATA;
+  input bit [3 : 0] S_AXI_HP2_WSTRB;
+  input bit Core0_nFIQ;
   output wire FCLK_CLK0;
+  output wire FCLK_CLK1;
   output wire FCLK_RESET0_N;
   inout wire [53 : 0] MIO;
   inout wire DDR_CAS_n;
@@ -163,7 +515,7 @@ endmodule
 
 `ifdef RIVIERA
 (* SC_MODULE_EXPORT *)
-module system_processing_system7_0_0 (ENET0_GMII_TX_EN,ENET0_GMII_TX_ER,ENET0_MDIO_MDC,ENET0_MDIO_O,ENET0_MDIO_T,ENET0_GMII_TXD,ENET0_GMII_COL,ENET0_GMII_CRS,ENET0_GMII_RX_CLK,ENET0_GMII_RX_DV,ENET0_GMII_RX_ER,ENET0_GMII_TX_CLK,ENET0_MDIO_I,ENET0_EXT_INTIN,ENET0_GMII_RXD,GPIO_I,GPIO_O,GPIO_T,FCLK_CLK0,FCLK_RESET0_N,MIO,DDR_CAS_n,DDR_CKE,DDR_Clk_n,DDR_Clk,DDR_CS_n,DDR_DRSTB,DDR_ODT,DDR_RAS_n,DDR_WEB,DDR_BankAddr,DDR_Addr,DDR_VRN,DDR_VRP,DDR_DM,DDR_DQ,DDR_DQS_n,DDR_DQS,PS_SRSTB,PS_CLK,PS_PORB)
+module system_processing_system7_0_0 (ENET0_GMII_TX_EN,ENET0_GMII_TX_ER,ENET0_MDIO_MDC,ENET0_MDIO_O,ENET0_MDIO_T,ENET0_GMII_TXD,ENET0_GMII_COL,ENET0_GMII_CRS,ENET0_GMII_RX_CLK,ENET0_GMII_RX_DV,ENET0_GMII_RX_ER,ENET0_GMII_TX_CLK,ENET0_MDIO_I,ENET0_EXT_INTIN,ENET0_GMII_RXD,GPIO_I,GPIO_O,GPIO_T,M_AXI_GP0_ARVALID,M_AXI_GP0_AWVALID,M_AXI_GP0_BREADY,M_AXI_GP0_RREADY,M_AXI_GP0_WLAST,M_AXI_GP0_WVALID,M_AXI_GP0_ARID,M_AXI_GP0_AWID,M_AXI_GP0_WID,M_AXI_GP0_ARBURST,M_AXI_GP0_ARLOCK,M_AXI_GP0_ARSIZE,M_AXI_GP0_AWBURST,M_AXI_GP0_AWLOCK,M_AXI_GP0_AWSIZE,M_AXI_GP0_ARPROT,M_AXI_GP0_AWPROT,M_AXI_GP0_ARADDR,M_AXI_GP0_AWADDR,M_AXI_GP0_WDATA,M_AXI_GP0_ARCACHE,M_AXI_GP0_ARLEN,M_AXI_GP0_ARQOS,M_AXI_GP0_AWCACHE,M_AXI_GP0_AWLEN,M_AXI_GP0_AWQOS,M_AXI_GP0_WSTRB,M_AXI_GP0_ACLK,M_AXI_GP0_ARREADY,M_AXI_GP0_AWREADY,M_AXI_GP0_BVALID,M_AXI_GP0_RLAST,M_AXI_GP0_RVALID,M_AXI_GP0_WREADY,M_AXI_GP0_BID,M_AXI_GP0_RID,M_AXI_GP0_BRESP,M_AXI_GP0_RRESP,M_AXI_GP0_RDATA,S_AXI_HP0_ARREADY,S_AXI_HP0_AWREADY,S_AXI_HP0_BVALID,S_AXI_HP0_RLAST,S_AXI_HP0_RVALID,S_AXI_HP0_WREADY,S_AXI_HP0_BRESP,S_AXI_HP0_RRESP,S_AXI_HP0_BID,S_AXI_HP0_RID,S_AXI_HP0_RDATA,S_AXI_HP0_RCOUNT,S_AXI_HP0_WCOUNT,S_AXI_HP0_RACOUNT,S_AXI_HP0_WACOUNT,S_AXI_HP0_ACLK,S_AXI_HP0_ARVALID,S_AXI_HP0_AWVALID,S_AXI_HP0_BREADY,S_AXI_HP0_RDISSUECAP1_EN,S_AXI_HP0_RREADY,S_AXI_HP0_WLAST,S_AXI_HP0_WRISSUECAP1_EN,S_AXI_HP0_WVALID,S_AXI_HP0_ARBURST,S_AXI_HP0_ARLOCK,S_AXI_HP0_ARSIZE,S_AXI_HP0_AWBURST,S_AXI_HP0_AWLOCK,S_AXI_HP0_AWSIZE,S_AXI_HP0_ARPROT,S_AXI_HP0_AWPROT,S_AXI_HP0_ARADDR,S_AXI_HP0_AWADDR,S_AXI_HP0_ARCACHE,S_AXI_HP0_ARLEN,S_AXI_HP0_ARQOS,S_AXI_HP0_AWCACHE,S_AXI_HP0_AWLEN,S_AXI_HP0_AWQOS,S_AXI_HP0_ARID,S_AXI_HP0_AWID,S_AXI_HP0_WID,S_AXI_HP0_WDATA,S_AXI_HP0_WSTRB,S_AXI_HP1_ARREADY,S_AXI_HP1_AWREADY,S_AXI_HP1_BVALID,S_AXI_HP1_RLAST,S_AXI_HP1_RVALID,S_AXI_HP1_WREADY,S_AXI_HP1_BRESP,S_AXI_HP1_RRESP,S_AXI_HP1_BID,S_AXI_HP1_RID,S_AXI_HP1_RDATA,S_AXI_HP1_RCOUNT,S_AXI_HP1_WCOUNT,S_AXI_HP1_RACOUNT,S_AXI_HP1_WACOUNT,S_AXI_HP1_ACLK,S_AXI_HP1_ARVALID,S_AXI_HP1_AWVALID,S_AXI_HP1_BREADY,S_AXI_HP1_RDISSUECAP1_EN,S_AXI_HP1_RREADY,S_AXI_HP1_WLAST,S_AXI_HP1_WRISSUECAP1_EN,S_AXI_HP1_WVALID,S_AXI_HP1_ARBURST,S_AXI_HP1_ARLOCK,S_AXI_HP1_ARSIZE,S_AXI_HP1_AWBURST,S_AXI_HP1_AWLOCK,S_AXI_HP1_AWSIZE,S_AXI_HP1_ARPROT,S_AXI_HP1_AWPROT,S_AXI_HP1_ARADDR,S_AXI_HP1_AWADDR,S_AXI_HP1_ARCACHE,S_AXI_HP1_ARLEN,S_AXI_HP1_ARQOS,S_AXI_HP1_AWCACHE,S_AXI_HP1_AWLEN,S_AXI_HP1_AWQOS,S_AXI_HP1_ARID,S_AXI_HP1_AWID,S_AXI_HP1_WID,S_AXI_HP1_WDATA,S_AXI_HP1_WSTRB,S_AXI_HP2_ARREADY,S_AXI_HP2_AWREADY,S_AXI_HP2_BVALID,S_AXI_HP2_RLAST,S_AXI_HP2_RVALID,S_AXI_HP2_WREADY,S_AXI_HP2_BRESP,S_AXI_HP2_RRESP,S_AXI_HP2_BID,S_AXI_HP2_RID,S_AXI_HP2_RDATA,S_AXI_HP2_RCOUNT,S_AXI_HP2_WCOUNT,S_AXI_HP2_RACOUNT,S_AXI_HP2_WACOUNT,S_AXI_HP2_ACLK,S_AXI_HP2_ARVALID,S_AXI_HP2_AWVALID,S_AXI_HP2_BREADY,S_AXI_HP2_RDISSUECAP1_EN,S_AXI_HP2_RREADY,S_AXI_HP2_WLAST,S_AXI_HP2_WRISSUECAP1_EN,S_AXI_HP2_WVALID,S_AXI_HP2_ARBURST,S_AXI_HP2_ARLOCK,S_AXI_HP2_ARSIZE,S_AXI_HP2_AWBURST,S_AXI_HP2_AWLOCK,S_AXI_HP2_AWSIZE,S_AXI_HP2_ARPROT,S_AXI_HP2_AWPROT,S_AXI_HP2_ARADDR,S_AXI_HP2_AWADDR,S_AXI_HP2_ARCACHE,S_AXI_HP2_ARLEN,S_AXI_HP2_ARQOS,S_AXI_HP2_AWCACHE,S_AXI_HP2_AWLEN,S_AXI_HP2_AWQOS,S_AXI_HP2_ARID,S_AXI_HP2_AWID,S_AXI_HP2_WID,S_AXI_HP2_WDATA,S_AXI_HP2_WSTRB,Core0_nFIQ,FCLK_CLK0,FCLK_CLK1,FCLK_RESET0_N,MIO,DDR_CAS_n,DDR_CKE,DDR_Clk_n,DDR_Clk,DDR_CS_n,DDR_DRSTB,DDR_ODT,DDR_RAS_n,DDR_WEB,DDR_BankAddr,DDR_Addr,DDR_VRN,DDR_VRP,DDR_DM,DDR_DQ,DDR_DQS_n,DDR_DQS,PS_SRSTB,PS_CLK,PS_PORB)
   output wire [0 : 0] ENET0_GMII_TX_EN;
   output wire [0 : 0] ENET0_GMII_TX_ER;
   output wire ENET0_MDIO_MDC;
@@ -182,7 +534,183 @@ module system_processing_system7_0_0 (ENET0_GMII_TX_EN,ENET0_GMII_TX_ER,ENET0_MD
   input bit [63 : 0] GPIO_I;
   output wire [63 : 0] GPIO_O;
   output wire [63 : 0] GPIO_T;
+  output wire M_AXI_GP0_ARVALID;
+  output wire M_AXI_GP0_AWVALID;
+  output wire M_AXI_GP0_BREADY;
+  output wire M_AXI_GP0_RREADY;
+  output wire M_AXI_GP0_WLAST;
+  output wire M_AXI_GP0_WVALID;
+  output wire [11 : 0] M_AXI_GP0_ARID;
+  output wire [11 : 0] M_AXI_GP0_AWID;
+  output wire [11 : 0] M_AXI_GP0_WID;
+  output wire [1 : 0] M_AXI_GP0_ARBURST;
+  output wire [1 : 0] M_AXI_GP0_ARLOCK;
+  output wire [2 : 0] M_AXI_GP0_ARSIZE;
+  output wire [1 : 0] M_AXI_GP0_AWBURST;
+  output wire [1 : 0] M_AXI_GP0_AWLOCK;
+  output wire [2 : 0] M_AXI_GP0_AWSIZE;
+  output wire [2 : 0] M_AXI_GP0_ARPROT;
+  output wire [2 : 0] M_AXI_GP0_AWPROT;
+  output wire [31 : 0] M_AXI_GP0_ARADDR;
+  output wire [31 : 0] M_AXI_GP0_AWADDR;
+  output wire [31 : 0] M_AXI_GP0_WDATA;
+  output wire [3 : 0] M_AXI_GP0_ARCACHE;
+  output wire [3 : 0] M_AXI_GP0_ARLEN;
+  output wire [3 : 0] M_AXI_GP0_ARQOS;
+  output wire [3 : 0] M_AXI_GP0_AWCACHE;
+  output wire [3 : 0] M_AXI_GP0_AWLEN;
+  output wire [3 : 0] M_AXI_GP0_AWQOS;
+  output wire [3 : 0] M_AXI_GP0_WSTRB;
+  input bit M_AXI_GP0_ACLK;
+  input bit M_AXI_GP0_ARREADY;
+  input bit M_AXI_GP0_AWREADY;
+  input bit M_AXI_GP0_BVALID;
+  input bit M_AXI_GP0_RLAST;
+  input bit M_AXI_GP0_RVALID;
+  input bit M_AXI_GP0_WREADY;
+  input bit [11 : 0] M_AXI_GP0_BID;
+  input bit [11 : 0] M_AXI_GP0_RID;
+  input bit [1 : 0] M_AXI_GP0_BRESP;
+  input bit [1 : 0] M_AXI_GP0_RRESP;
+  input bit [31 : 0] M_AXI_GP0_RDATA;
+  output wire S_AXI_HP0_ARREADY;
+  output wire S_AXI_HP0_AWREADY;
+  output wire S_AXI_HP0_BVALID;
+  output wire S_AXI_HP0_RLAST;
+  output wire S_AXI_HP0_RVALID;
+  output wire S_AXI_HP0_WREADY;
+  output wire [1 : 0] S_AXI_HP0_BRESP;
+  output wire [1 : 0] S_AXI_HP0_RRESP;
+  output wire [5 : 0] S_AXI_HP0_BID;
+  output wire [5 : 0] S_AXI_HP0_RID;
+  output wire [63 : 0] S_AXI_HP0_RDATA;
+  output wire [7 : 0] S_AXI_HP0_RCOUNT;
+  output wire [7 : 0] S_AXI_HP0_WCOUNT;
+  output wire [2 : 0] S_AXI_HP0_RACOUNT;
+  output wire [5 : 0] S_AXI_HP0_WACOUNT;
+  input bit S_AXI_HP0_ACLK;
+  input bit S_AXI_HP0_ARVALID;
+  input bit S_AXI_HP0_AWVALID;
+  input bit S_AXI_HP0_BREADY;
+  input bit S_AXI_HP0_RDISSUECAP1_EN;
+  input bit S_AXI_HP0_RREADY;
+  input bit S_AXI_HP0_WLAST;
+  input bit S_AXI_HP0_WRISSUECAP1_EN;
+  input bit S_AXI_HP0_WVALID;
+  input bit [1 : 0] S_AXI_HP0_ARBURST;
+  input bit [1 : 0] S_AXI_HP0_ARLOCK;
+  input bit [2 : 0] S_AXI_HP0_ARSIZE;
+  input bit [1 : 0] S_AXI_HP0_AWBURST;
+  input bit [1 : 0] S_AXI_HP0_AWLOCK;
+  input bit [2 : 0] S_AXI_HP0_AWSIZE;
+  input bit [2 : 0] S_AXI_HP0_ARPROT;
+  input bit [2 : 0] S_AXI_HP0_AWPROT;
+  input bit [31 : 0] S_AXI_HP0_ARADDR;
+  input bit [31 : 0] S_AXI_HP0_AWADDR;
+  input bit [3 : 0] S_AXI_HP0_ARCACHE;
+  input bit [3 : 0] S_AXI_HP0_ARLEN;
+  input bit [3 : 0] S_AXI_HP0_ARQOS;
+  input bit [3 : 0] S_AXI_HP0_AWCACHE;
+  input bit [3 : 0] S_AXI_HP0_AWLEN;
+  input bit [3 : 0] S_AXI_HP0_AWQOS;
+  input bit [5 : 0] S_AXI_HP0_ARID;
+  input bit [5 : 0] S_AXI_HP0_AWID;
+  input bit [5 : 0] S_AXI_HP0_WID;
+  input bit [63 : 0] S_AXI_HP0_WDATA;
+  input bit [7 : 0] S_AXI_HP0_WSTRB;
+  output wire S_AXI_HP1_ARREADY;
+  output wire S_AXI_HP1_AWREADY;
+  output wire S_AXI_HP1_BVALID;
+  output wire S_AXI_HP1_RLAST;
+  output wire S_AXI_HP1_RVALID;
+  output wire S_AXI_HP1_WREADY;
+  output wire [1 : 0] S_AXI_HP1_BRESP;
+  output wire [1 : 0] S_AXI_HP1_RRESP;
+  output wire [5 : 0] S_AXI_HP1_BID;
+  output wire [5 : 0] S_AXI_HP1_RID;
+  output wire [63 : 0] S_AXI_HP1_RDATA;
+  output wire [7 : 0] S_AXI_HP1_RCOUNT;
+  output wire [7 : 0] S_AXI_HP1_WCOUNT;
+  output wire [2 : 0] S_AXI_HP1_RACOUNT;
+  output wire [5 : 0] S_AXI_HP1_WACOUNT;
+  input bit S_AXI_HP1_ACLK;
+  input bit S_AXI_HP1_ARVALID;
+  input bit S_AXI_HP1_AWVALID;
+  input bit S_AXI_HP1_BREADY;
+  input bit S_AXI_HP1_RDISSUECAP1_EN;
+  input bit S_AXI_HP1_RREADY;
+  input bit S_AXI_HP1_WLAST;
+  input bit S_AXI_HP1_WRISSUECAP1_EN;
+  input bit S_AXI_HP1_WVALID;
+  input bit [1 : 0] S_AXI_HP1_ARBURST;
+  input bit [1 : 0] S_AXI_HP1_ARLOCK;
+  input bit [2 : 0] S_AXI_HP1_ARSIZE;
+  input bit [1 : 0] S_AXI_HP1_AWBURST;
+  input bit [1 : 0] S_AXI_HP1_AWLOCK;
+  input bit [2 : 0] S_AXI_HP1_AWSIZE;
+  input bit [2 : 0] S_AXI_HP1_ARPROT;
+  input bit [2 : 0] S_AXI_HP1_AWPROT;
+  input bit [31 : 0] S_AXI_HP1_ARADDR;
+  input bit [31 : 0] S_AXI_HP1_AWADDR;
+  input bit [3 : 0] S_AXI_HP1_ARCACHE;
+  input bit [3 : 0] S_AXI_HP1_ARLEN;
+  input bit [3 : 0] S_AXI_HP1_ARQOS;
+  input bit [3 : 0] S_AXI_HP1_AWCACHE;
+  input bit [3 : 0] S_AXI_HP1_AWLEN;
+  input bit [3 : 0] S_AXI_HP1_AWQOS;
+  input bit [5 : 0] S_AXI_HP1_ARID;
+  input bit [5 : 0] S_AXI_HP1_AWID;
+  input bit [5 : 0] S_AXI_HP1_WID;
+  input bit [63 : 0] S_AXI_HP1_WDATA;
+  input bit [7 : 0] S_AXI_HP1_WSTRB;
+  output wire S_AXI_HP2_ARREADY;
+  output wire S_AXI_HP2_AWREADY;
+  output wire S_AXI_HP2_BVALID;
+  output wire S_AXI_HP2_RLAST;
+  output wire S_AXI_HP2_RVALID;
+  output wire S_AXI_HP2_WREADY;
+  output wire [1 : 0] S_AXI_HP2_BRESP;
+  output wire [1 : 0] S_AXI_HP2_RRESP;
+  output wire [5 : 0] S_AXI_HP2_BID;
+  output wire [5 : 0] S_AXI_HP2_RID;
+  output wire [31 : 0] S_AXI_HP2_RDATA;
+  output wire [7 : 0] S_AXI_HP2_RCOUNT;
+  output wire [7 : 0] S_AXI_HP2_WCOUNT;
+  output wire [2 : 0] S_AXI_HP2_RACOUNT;
+  output wire [5 : 0] S_AXI_HP2_WACOUNT;
+  input bit S_AXI_HP2_ACLK;
+  input bit S_AXI_HP2_ARVALID;
+  input bit S_AXI_HP2_AWVALID;
+  input bit S_AXI_HP2_BREADY;
+  input bit S_AXI_HP2_RDISSUECAP1_EN;
+  input bit S_AXI_HP2_RREADY;
+  input bit S_AXI_HP2_WLAST;
+  input bit S_AXI_HP2_WRISSUECAP1_EN;
+  input bit S_AXI_HP2_WVALID;
+  input bit [1 : 0] S_AXI_HP2_ARBURST;
+  input bit [1 : 0] S_AXI_HP2_ARLOCK;
+  input bit [2 : 0] S_AXI_HP2_ARSIZE;
+  input bit [1 : 0] S_AXI_HP2_AWBURST;
+  input bit [1 : 0] S_AXI_HP2_AWLOCK;
+  input bit [2 : 0] S_AXI_HP2_AWSIZE;
+  input bit [2 : 0] S_AXI_HP2_ARPROT;
+  input bit [2 : 0] S_AXI_HP2_AWPROT;
+  input bit [31 : 0] S_AXI_HP2_ARADDR;
+  input bit [31 : 0] S_AXI_HP2_AWADDR;
+  input bit [3 : 0] S_AXI_HP2_ARCACHE;
+  input bit [3 : 0] S_AXI_HP2_ARLEN;
+  input bit [3 : 0] S_AXI_HP2_ARQOS;
+  input bit [3 : 0] S_AXI_HP2_AWCACHE;
+  input bit [3 : 0] S_AXI_HP2_AWLEN;
+  input bit [3 : 0] S_AXI_HP2_AWQOS;
+  input bit [5 : 0] S_AXI_HP2_ARID;
+  input bit [5 : 0] S_AXI_HP2_AWID;
+  input bit [5 : 0] S_AXI_HP2_WID;
+  input bit [31 : 0] S_AXI_HP2_WDATA;
+  input bit [3 : 0] S_AXI_HP2_WSTRB;
+  input bit Core0_nFIQ;
   output wire FCLK_CLK0;
+  output wire FCLK_CLK1;
   output wire FCLK_RESET0_N;
   inout wire [53 : 0] MIO;
   inout wire DDR_CAS_n;

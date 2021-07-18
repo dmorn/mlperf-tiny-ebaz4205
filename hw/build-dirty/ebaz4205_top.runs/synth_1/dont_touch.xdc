@@ -7,10 +7,22 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system || O
 # IP: bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_DPUCZDX8G_0_0 || ORIG_REF_NAME==system_DPUCZDX8G_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_proc_sys_reset_0_0 || ORIG_REF_NAME==system_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_proc_sys_reset_1_0 || ORIG_REF_NAME==system_proc_sys_reset_1_0} -quiet] -quiet
+
 # XDC: /home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/pinout.xdc
 
 # XDC: /home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/bitstream.xdc
 
 # XDC: /home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/general.xdc
 
-# XDC: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-1/ebaz4205_top.gen/sources_1/bd/system/system_ooc.xdc
+# XDC: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/system_ooc.xdc

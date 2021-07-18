@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Tue Jul 13 14:28:48 2021
+--Date        : Sun Jul 18 13:39:30 2021
 --Host        : thinkterm running 64-bit Ubuntu 20.04.2 LTS
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -62,12 +62,6 @@ architecture STRUCTURE of system_wrapper is
     eth0_gmii_tx_clk : in STD_LOGIC;
     eth0_gmii_tx_en : out STD_LOGIC_VECTOR ( 0 to 0 );
     eth0_gmii_txd : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    fixed_io_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    fixed_io_ddr_vrn : inout STD_LOGIC;
-    fixed_io_ddr_vrp : inout STD_LOGIC;
-    fixed_io_ps_srstb : inout STD_LOGIC;
-    fixed_io_ps_clk : inout STD_LOGIC;
-    fixed_io_ps_porb : inout STD_LOGIC;
     ddr_cas_n : inout STD_LOGIC;
     ddr_cke : inout STD_LOGIC;
     ddr_ck_n : inout STD_LOGIC;
@@ -86,7 +80,13 @@ architecture STRUCTURE of system_wrapper is
     eth0_mdio_mdc : out STD_LOGIC;
     eth0_mdio_mdio_o : out STD_LOGIC;
     eth0_mdio_mdio_t : out STD_LOGIC;
-    eth0_mdio_mdio_i : in STD_LOGIC
+    eth0_mdio_mdio_i : in STD_LOGIC;
+    fixed_io_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    fixed_io_ddr_vrn : inout STD_LOGIC;
+    fixed_io_ddr_vrp : inout STD_LOGIC;
+    fixed_io_ps_srstb : inout STD_LOGIC;
+    fixed_io_ps_clk : inout STD_LOGIC;
+    fixed_io_ps_porb : inout STD_LOGIC
   );
   end component system;
   component IOBUF is

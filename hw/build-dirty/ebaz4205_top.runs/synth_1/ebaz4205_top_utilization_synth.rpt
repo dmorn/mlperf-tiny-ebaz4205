@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Tue Jul 13 14:31:31 2021
+| Date         : Sun Jul 18 13:51:05 2021
 | Host         : thinkterm running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_utilization -file ebaz4205_top_utilization_synth.rpt -pb ebaz4205_top_utilization_synth.pb
 | Design       : ebaz4205_top
@@ -159,6 +159,10 @@ Table of Contents
 |            Ref Name           | Used |
 +-------------------------------+------+
 | system_processing_system7_0_0 |    1 |
+| system_proc_sys_reset_1_0     |    1 |
+| system_proc_sys_reset_0_0     |    1 |
+| system_clk_wiz_0_0            |    1 |
+| system_DPUCZDX8G_0_0          |    1 |
 +-------------------------------+------+
 
 
