@@ -1,6 +1,10 @@
 mlcommons tiny performance benchmark on EBAZ4205 (former bitcoin mining board
 built around Xilinx Zynq-7000 SoC)
 
+# ARCHIVED
+Xilinx's DPU requires more LUT than EBAZ can provide. Accelarating the
+benchmark on the PS without that IP is more challenging.
+
 # Reproducing
 The final executable is expected to run on the ARM CPU accelterated by the PL
 side of the chip.  The compilation of the kernel is a step which is not
