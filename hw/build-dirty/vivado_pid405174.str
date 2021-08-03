@@ -1,0 +1,1269 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 405174
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Jul 14 11:43:33 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Rome)
+
+OS: Ubuntu
+OS Version: 5.8.0-59-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/home/dan/xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/home/dan/xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	dan
+User home directory: /home/dan
+User working directory: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/dan/xilinx/Vivado
+HDI_APPROOT: /home/dan/xilinx/Vivado/2020.2
+RDI_DATADIR: /home/dan/xilinx/Vivado/2020.2/data
+RDI_BINDIR: /home/dan/xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/dan/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/dan/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/dan/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/home/dan/xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/vivado.log
+Vivado journal file location: 	/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-405174-thinkterm
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/dan/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /home/dan/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /home/dan/xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /home/dan/xilinx/Vivado/2020.2
+XILINX_SDK: /home/dan/xilinx/Vitis/2020.2
+XILINX_VITIS: /home/dan/xilinx/Vitis/2020.2
+XILINX_VIVADO: /home/dan/xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /home/dan/xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,466 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: ebaz4205_top.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: open_project ebaz4205_top.xpr 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+109042kb) [00:00:17]
+// [Engine Memory]: 1,487 MB (+1407986kb) [00:00:17]
+// [GUI Memory]: 113 MB (+1393kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  5967 ms.
+// Tcl Message: open_project ebaz4205_top.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/dan/src/mlperf-tiny-ebaz4205/hw/IP/DPU-TRD'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dan/xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,541 MB. GUI used memory: 55 MB. Current time: 7/14/21, 11:43:40 AM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1140 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 7263.289 ; gain = 58.098 ; free physical = 2652 ; free virtual = 7251 
+// Project name: ebaz4205_top; location: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 480ms to process. Increasing delay to 3000 ms.
+// [Engine Memory]: 1,564 MB (+2540kb) [00:00:26]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1315 ms.
+// [GUI Memory]: 119 MB (+714kb) [00:00:34]
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 2); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,632 MB. GUI used memory: 79 MB. Current time: 7/14/21, 11:43:55 AM CEST
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ebaz4205_top(arch) (ebaz4205_top.vhd)]", 2); // D
+// PAPropertyPanels.initPanels (system.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ebaz4205_top(arch) (ebaz4205_top.vhd), system_wrapper_i : system_wrapper(STRUCTURE) (system_wrapper.vhd), system_i : system (system.bd)]", 4, true); // D - Node
+// [GUI Memory]: 138 MB (+12811kb) [00:00:40]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ebaz4205_top(arch) (ebaz4205_top.vhd), system_wrapper_i : system_wrapper(STRUCTURE) (system_wrapper.vhd), system_i : system (system.bd)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Reading block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:DPUCZDX8G:3.3 - DPUCZDX8G_0 
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3287 ms.
+// Tcl Message: Successfully read diagram <system> from block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+// [Engine Memory]: 1,741 MB (+103547kb) [00:00:48]
+// PAPropertyPanels.initPanels (system.bd) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1386 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 8621.832 ; gain = 1254.953 ; free physical = 2513 ; free virtual = 7120 
+// [Engine Memory]: 1,830 MB (+1829kb) [00:00:50]
+dismissDialog("Open Block Design"); // bz
+// Elapsed time: 13 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 97, 271, 1120, 543, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ak
+// [GUI Memory]: 148 MB (+3634kb) [00:01:09]
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 3, "Clocking Wizard", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 3); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 3, "Clocking Wizard", 0, false, false, false, false, false, true); // L - Double Click
+// bz (cr):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,865 MB. GUI used memory: 92 MB. Current time: 7/14/21, 11:44:40 AM CEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2119 ms.
+// Elapsed time: 307 seconds
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 66 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+setText("CLKOUT1 REQUESTED OUT FREQ", "350"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "650", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 17 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "300"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "600", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 11 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "280"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "560", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "500", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 10 seconds
+setText("CLKOUT2 REQUESTED OUT FREQ", "480"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT1 REQUESTED OUT FREQ", "480", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 177 MB (+23036kb) [00:08:57]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, (String) null); // x: TRUE
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, "PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER"); // x: FALSE
+// Elapsed time: 12 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1434, 45); // dS
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 95 seconds
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  1035 ms.
+// Elapsed time: 24 seconds
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, (String) null); // x: TRUE
+setText("PRIM IN FREQ", "250", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1295 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 25 seconds
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  1625 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// [GUI Memory]: 186 MB (+31kb) [00:11:58]
+setText("CLKOUT1 REQUESTED OUT FREQ", (String) null); // B
+setText("CLKOUT1 REQUESTED OUT FREQ", "650", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 11 seconds
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  11811 ms.
+// Thread: main
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1129)
+// 	at ui.PlanAhead.jswMain(SourceFile:1176)
+// Thread: AWT-Shutdown
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.Object.wait(Object.java:328)
+// 	at java.desktop@11.0.2/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: TimerQueue
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+// 	at java.base@11.0.2/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+// 	at java.desktop@11.0.2/javax.swing.TimerQueue.run(TimerQueue.java:171)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: pool-5-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Finalizer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.base@11.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+// Thread: Thread-1
+// Thread: pool-2-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@11.0.2/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@11.0.2/java.lang.Thread.getAllStackTraces(Thread.java:1657)
+// 	at ui.utils.d.c.hXX(SourceFile:557)
+// 	at ui.frmwork.a.e.aOt(SourceFile:144)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Prism Font Disposer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at com.sun.javafx.font.Disposer.run(Disposer.java:93)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.z.aOt(SourceFile:2503)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Batik CleanerThread
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Java2D Disposer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at java.desktop@11.0.2/sun.java2d.Disposer.run(Disposer.java:144)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: pool-4-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: pool-3-thread-1
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: AWT-XAWT
+// 	at java.desktop@11.0.2/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+// 	at java.desktop@11.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:688)
+// 	at java.desktop@11.0.2/sun.awt.X11.XToolkit.run(XToolkit.java:652)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: QuantumRenderer-0
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:125)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Reference Handler
+// 	at java.base@11.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+// 	at java.base@11.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.aOt(SourceFile:368)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Attach Listener
+// Thread: hw_ila_monitor
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.Object.wait(Object.java:328)
+// 	at java.base@11.0.2/java.util.TimerThread.mainLoop(Timer.java:527)
+// 	at java.base@11.0.2/java.util.TimerThread.run(Timer.java:506)
+// Thread: InvokeLaterDispatcher
+// 	at java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@11.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+// 	at java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+// 	at java.base@11.0.2/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:483)
+// 	at com.sun.glass.ui.InvokeLaterDispatcher.run(InvokeLaterDispatcher.java:109)
+// Thread: AWT-EventQueue-0
+// 	at ui.xpeguajni.XPG_JModelJNI.XPG_GuiText_getText(Native Method)
+// 	at ui.xpeguajni.XPG_GuiText.getText(SourceFile:72)
+// 	at ui.data.coregen.a.cT.bJO(SourceFile:91)
+// 	at ui.data.coregen.a.cT.b(SourceFile:69)
+// 	at ui.xpeguajni.XPG_JModel.triggerUpdate(SourceFile:128)
+// 	at ui.xpeguajni.XPG_JModelJNI.XPG_Component_setValueBasic__SWIG_2(Native Method)
+// 	at ui.xpeguajni.H.gE(SourceFile:108)
+// 	at ui.data.coregen.a.bN.actionPerformed(SourceFile:261)
+// 	at java.desktop@11.0.2/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1967)
+// 	at java.desktop@11.0.2/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2308)
+// 	at java.desktop@11.0.2/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+// 	at java.desktop@11.0.2/javax.swing.JToggleButton$ToggleButtonModel.setPressed(JToggleButton.java:401)
+// 	at java.desktop@11.0.2/javax.swing.plaf.basic.BasicButtonListener.focusLost(BasicButtonListener.java:222)
+// 	at java.desktop@11.0.2/java.awt.AWTEventMulticaster.focusLost(AWTEventMulticaster.java:237)
+// 	at java.desktop@11.0.2/java.awt.Component.processFocusEvent(Component.java:6524)
+// 	at java.desktop@11.0.2/java.awt.Component.processEvent(Component.java:6388)
+// 	at java.desktop@11.0.2/java.awt.Container.processEvent(Container.java:2263)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEventImpl(Component.java:5008)
+// 	at java.desktop@11.0.2/java.awt.Container.dispatchEventImpl(Container.java:2321)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEvent(Component.java:4840)
+// 	at java.desktop@11.0.2/java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1950)
+// 	at java.desktop@11.0.2/java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:1060)
+// 	at java.desktop@11.0.2/java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:726)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEventImpl(Component.java:4889)
+// 	at java.desktop@11.0.2/java.awt.Container.dispatchEventImpl(Container.java:2321)
+// 	at java.desktop@11.0.2/java.awt.Component.dispatchEvent(Component.java:4840)
+// 	at java.desktop@11.0.2/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$4.run(EventQueue.java:721)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$4.run(EventQueue.java:715)
+// 	at java.base@11.0.2/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$5.run(EventQueue.java:745)
+// 	at java.desktop@11.0.2/java.awt.EventQueue$5.run(EventQueue.java:743)
+// 	at java.base@11.0.2/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@11.0.2/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+// 	at java.desktop@11.0.2/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+// 	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+// 	at java.desktop@11.0.2/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+// Thread: Process Messages Thread
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.c.h.aOt(SourceFile:133)
+// 	at ui.frmwork.y.run(SourceFile:203)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@11.0.2/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Disposer
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+// 	at com.sun.webkit.Disposer.run(Disposer.java:122)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: SocketStreamHandle-1
+// 	at java.base@11.0.2/java.net.SocketInputStream.socketRead0(Native Method)
+// 	at java.base@11.0.2/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+// 	at java.base@11.0.2/java.net.SocketInputStream.read(SocketInputStream.java:168)
+// 	at java.base@11.0.2/java.net.SocketInputStream.read(SocketInputStream.java:140)
+// 	at java.base@11.0.2/java.net.SocketInputStream.read(SocketInputStream.java:126)
+// 	at com.sun.webkit.network.SocketStreamHandle.doRun(SocketStreamHandle.java:134)
+// 	at com.sun.webkit.network.SocketStreamHandle.lambda$run$1(SocketStreamHandle.java:117)
+// 	at com.sun.webkit.network.SocketStreamHandle$$Lambda$494/0x00000007c0ee6440.run(Unknown Source)
+// 	at java.base@11.0.2/java.security.AccessController.doPrivileged(Native Method)
+// 	at com.sun.webkit.network.SocketStreamHandle.run(SocketStreamHandle.java:116)
+// 	at com.sun.webkit.network.SocketStreamHandle.lambda$fwkCreate$0(SocketStreamHandle.java:99)
+// 	at com.sun.webkit.network.SocketStreamHandle$$Lambda$492/0x00000007c0ee6c40.run(Unknown Source)
+// 	at java.base@11.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+// 	at java.base@11.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+// 	at java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Thread: Common-Cleaner
+// 	at java.base@11.0.2/java.lang.Object.wait(Native Method)
+// 	at java.base@11.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+// 	at java.base@11.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// 	at java.base@11.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+// Thread: JavaFX Application Thread
+// 	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+// 	at com.sun.glass.ui.gtk.GtkApplication.lambda$runLoop$11(GtkApplication.java:277)
+// 	at com.sun.glass.ui.gtk.GtkApplication$$Lambda$326/0x00000007c0d7a040.run(Unknown Source)
+// 	at java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+// Elapsed time: 12 seconds
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  13264 ms.
+// Elapsed time: 38 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  1053 ms.
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, (String) null); // x: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, "PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL"); // x: TRUE
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, (String) null); // x: FALSE
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, "PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER_MANUAL"); // x: TRUE
+setText("PRIM IN FREQ", "250", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+setText("CLKOUT2 REQUESTED OUT FREQ", (String) null); // B
+setText("CLKOUT2 REQUESTED OUT FREQ", (String) null); // B
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// I (r): Errors Found: addNotify
+selectList(PAResourceAtoD.CustomizeErrorDialog_MESSAGES, "Tcl error in update procedure while setting value 'false' on the parameter 'CLKOUT2_USED'. missing operand at _@_. in expression 650 / (_@_*1.0)", 0); // a
+selectList(PAResourceAtoD.CustomizeErrorDialog_MESSAGES, "Tcl error in update procedure while setting value 'false' on the parameter 'CLKOUT2_USED'. missing operand at _@_. in expression 650 / (_@_*1.0)", 0, false, false, false, false, true); // a - Double Click
+selectButton(PAResourceAtoD.CustomizeErrorDialog_OK, "OK"); // a
+dismissDialog("Errors Found"); // I
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+// [GUI Memory]: 199 MB (+3953kb) [00:14:09]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1077 ms.
+dismissDialog("Re-customize IP"); // N
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+dismissDialog("Customize Pin"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // N
+selectButton("Clock Configuration", "Clock Configuration"); // k
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // z
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "FCLK_CLK1 ; IO PLL ; 100 ; 100.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks", 4, "100", 2, false); // z
+setText("PCW FPGA1 PERIPHERAL FREQMHZ", "250", true); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {250}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {250}] [get_bd_cells processing_system7_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz
+// [GUI Memory]: 210 MB (+390kb) [00:14:51]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins clk_wiz_0/clk_in1] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1304 ms.
+// Elapsed time: 10 seconds
+dismissDialog("Re-customize IP"); // N
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, (String) null); // x: TRUE
+setText("PRIM IN FREQ", "250"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+applyEnter("PRIM IN FREQ", "250"); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 222 MB (+2269kb) [00:15:13]
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Command: 'set_property -dict [list CONFIG.PRIM_IN_FREQ {250} CONFIG.CLKIN1_JITTER_PS {40.0} CONFIG.MMCM_CLKFBOUT_MULT_F {4.000} CONFIG.MMCM_CLKIN1_PERIOD {4.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {107.111} CONFIG.CLKOUT1_PHASE_ERROR {85.928}] [get_bd_cells clk_wiz_0]'
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0] 
+// Tcl Message: set_property -dict [list CONFIG.PRIM_IN_FREQ {250} CONFIG.CLKIN1_JITTER_PS {40.0} CONFIG.MMCM_CLKFBOUT_MULT_F {4.000} CONFIG.MMCM_CLKIN1_PERIOD {4.000} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.CLKOUT1_JITTER {107.111} CONFIG.CLKOUT1_PHASE_ERROR {85.928}] [get_bd_cells clk_wiz_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1283 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// HMemoryUtils.trashcanNow. Engine heap size: 1,932 MB. GUI used memory: 170 MB. Current time: 7/14/21, 11:58:40 AM CEST
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cQ
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// [Engine Memory]: 1,940 MB (+19930kb) [00:15:24]
+// Tcl Command: 'set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {167.067} CONFIG.CLKOUT1_PHASE_ERROR {161.614}] [get_bd_cells clk_wiz_0]'
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {167.067} CONFIG.CLKOUT1_PHASE_ERROR {161.614}] [get_bd_cells clk_wiz_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// Elapsed time: 12 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "650"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 23 seconds
+setText("CLKOUT1 REQUESTED OUT FREQ", "400", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "200", true); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 27 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // cV
+// Elapsed time: 28 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_CLKFBOUT_MULT_F {24} CONFIG.MMCM_CLKOUT0_DIVIDE_F {3} CONFIG.MMCM_CLKOUT1_DIVIDE {6} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {106.120} CONFIG.CLKOUT1_PHASE_ERROR {154.678} CONFIG.CLKOUT2_JITTER {119.393} CONFIG.CLKOUT2_PHASE_ERROR {154.678}] [get_bd_cells clk_wiz_0]'
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} CONFIG.MMCM_CLKFBOUT_MULT_F {24} CONFIG.MMCM_CLKOUT0_DIVIDE_F {3} CONFIG.MMCM_CLKOUT1_DIVIDE {6} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {106.120} CONFIG.CLKOUT1_PHASE_ERROR {154.678} CONFIG.CLKOUT2_JITTER {119.393} CONFIG.CLKOUT2_PHASE_ERROR {154.678}] [get_bd_cells clk_wiz_0] 
+// Tcl Message: endgroup 
+// [GUI Memory]: 246 MB (+13236kb) [00:17:30]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+// Elapsed time: 62 seconds
+dismissDialog("Customize Pin"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1059 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 259 MB (+940kb) [00:18:48]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 52 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT1_DRIVES {BUFHCE} CONFIG.CLKOUT2_DRIVES {BUFHCE} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO}] [get_bd_cells clk_wiz_0]'
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_DRIVES {BUFHCE} CONFIG.CLKOUT2_DRIVES {BUFHCE} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO}] [get_bd_cells clk_wiz_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+// Elapsed time: 35 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Advanced", 1); // bi
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1291 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO}] [get_bd_cells clk_wiz_0]'
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO}] [get_bd_cells clk_wiz_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins DPUCZDX8G_0/dpu_2x_clk] 
+// Tcl Command: 'set_property location {2 493 255} [get_bd_cells DPUCZDX8G_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 493 255} [get_bd_cells DPUCZDX8G_0] 
+// Tcl Command: 'set_property location {2 487 244} [get_bd_cells DPUCZDX8G_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 487 244} [get_bd_cells DPUCZDX8G_0] 
+// Tcl Command: 'set_property location {3 970 261} [get_bd_cells processing_system7_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 970 261} [get_bd_cells processing_system7_0] 
+// Tcl Command: 'set_property location {3 969 248} [get_bd_cells processing_system7_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 969 248} [get_bd_cells processing_system7_0] 
+// Elapsed time: 80 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "System_select_area"); // x: TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+// cb (cr): Select Area: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select Area"); // cb
+// Tcl Command: 'set_property location {1337 262} [get_bd_ports emio_i]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 302} [get_bd_ports emio_t]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 102} [get_bd_ports eth0_gmii_tx_en]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 382} [get_bd_ports eth0_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 252} [get_bd_ports emio_o]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 222} [get_bd_intf_ports eth0_mdio]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 142} [get_bd_ports eth0_gmii_rx_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 292} [get_bd_ports eth0_gmii_txd]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 182} [get_bd_ports eth0_gmii_tx_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 342} [get_bd_intf_ports fixed_io]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 372} [get_bd_intf_ports ddr]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 212} [get_bd_ports eth0_gmii_rxd]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {1337 132} [get_bd_ports eth0_gmii_rx_dv]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: startgroup 
+// Tcl Message: set_property location {1337 262} [get_bd_ports emio_i] 
+// Tcl Message: set_property location {1337 302} [get_bd_ports emio_t] 
+// Tcl Message: set_property location {1337 102} [get_bd_ports eth0_gmii_tx_en] 
+// Tcl Message: set_property location {1337 382} [get_bd_ports eth0_clk] 
+// Tcl Message: set_property location {1337 252} [get_bd_ports emio_o] 
+// Tcl Message: set_property location {1337 222} [get_bd_intf_ports eth0_mdio] 
+// Tcl Message: set_property location {1337 142} [get_bd_ports eth0_gmii_rx_clk] 
+// Tcl Message: set_property location {1337 292} [get_bd_ports eth0_gmii_txd] 
+// Tcl Message: set_property location {1337 182} [get_bd_ports eth0_gmii_tx_clk] 
+// Tcl Message: set_property location {1337 342} [get_bd_intf_ports fixed_io] 
+// Tcl Message: set_property location {1337 372} [get_bd_intf_ports ddr] 
+// Tcl Message: set_property location {1337 212} [get_bd_ports eth0_gmii_rxd] 
+// Tcl Message: set_property location {1337 132} [get_bd_ports eth0_gmii_rx_dv] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Command: 'set_property location {1348 327} [get_bd_intf_ports ddr]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1348 327} [get_bd_intf_ports ddr] 
+// Tcl Command: 'set_property location {1337 323} [get_bd_intf_ports ddr]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1337 323} [get_bd_intf_ports ddr] 
+// Tcl Command: 'set_property location {1334 334} [get_bd_intf_ports fixed_io]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1334 334} [get_bd_intf_ports fixed_io] 
+// Tcl Command: 'set_property location {1332 374} [get_bd_ports eth0_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1332 374} [get_bd_ports eth0_clk] 
+// Tcl Command: 'set_property location {1334 386} [get_bd_ports eth0_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1334 386} [get_bd_ports eth0_clk] 
+// Tcl Command: 'set_property location {1335 382} [get_bd_ports eth0_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1335 382} [get_bd_ports eth0_clk] 
+// Tcl Command: 'set_property location {1326 342} [get_bd_intf_ports fixed_io]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1326 342} [get_bd_intf_ports fixed_io] 
+// Tcl Command: 'set_property location {1334 322} [get_bd_intf_ports ddr]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1334 322} [get_bd_intf_ports ddr] 
+// Tcl Command: 'set_property location {1328 296} [get_bd_ports emio_t]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1328 296} [get_bd_ports emio_t] 
+// Tcl Command: 'set_property location {1328 279} [get_bd_ports emio_o]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1328 279} [get_bd_ports emio_o] 
+// Elapsed time: 24 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 846, 240, 1120, 543, false, false, false, true, false); // hv - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1050, 251, 1120, 543, false, false, false, true, false); // hv - Popup Trigger
+// Tcl Command: 'set_property location {1337 267} [get_bd_ports emio_i]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1337 267} [get_bd_ports emio_i] 
+// Tcl Command: 'set_property location {1324 264} [get_bd_ports emio_i]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1324 264} [get_bd_ports emio_i] 
+// Tcl Command: 'set_property location {1331 228} [get_bd_intf_ports eth0_mdio]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1331 228} [get_bd_intf_ports eth0_mdio] 
+// Tcl Command: 'set_property location {1332 217} [get_bd_intf_ports eth0_mdio]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1332 217} [get_bd_intf_ports eth0_mdio] 
+// Tcl Command: 'set_property location {1339 201} [get_bd_ports eth0_gmii_tx_clk]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1339 201} [get_bd_ports eth0_gmii_tx_clk] 
+// Tcl Command: 'set_property location {1339 210} [get_bd_intf_ports eth0_mdio]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1339 210} [get_bd_intf_ports eth0_mdio] 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 20 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {1339 210} [get_bd_intf_ports eth0_mdio]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {1339 201} [get_bd_ports eth0_gmii_tx_clk]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {1332 217} [get_bd_intf_ports eth0_mdio]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property location {1331 228} [get_bd_intf_ports eth0_mdio]' 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins DPUCZDX8G_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK1] 
+// Elapsed time: 94 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins DPUCZDX8G_0/m_axi_dpu_aclk] 
+// Elapsed time: 107 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 211, 267, 1120, 543, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ak
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_0_clk_out2] 
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTIMIZE_LAYOUT"); // E
+// Tcl Command: 'regenerate_bd_layout -routing'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_ROUTE_LAYOUT
+// Tcl Message: regenerate_bd_layout -routing 
+// [GUI Memory]: 273 MB (+616kb) [00:29:51]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+// Elapsed time: 480 seconds
+dismissDialog("Re-customize IP"); // N
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "General ; General ; General", 0); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "General ; General ; General", 0); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "AXI Non Secure Enablement  ; 0 ; Enable AXI Non Secure Transaction", 1); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "GP Master AXI Interface ; GP Master AXI Interface ; GP Master AXI Interface", 2); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "M AXI GP0 interface ; 1 ; Enables General purpose AXI master interface 0", 3); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "M AXI GP0 interface ; 1 ; Enables General purpose AXI master interface 0", 3); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "AXI Non Secure Enablement  ; 0 ; Enable AXI Non Secure Transaction", 1); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "GP Slave AXI Interface ; GP Slave AXI Interface ; GP Slave AXI Interface", 2); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "GP Slave AXI Interface ; GP Slave AXI Interface ; GP Slave AXI Interface", 2); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "HP Slave AXI Interface ; HP Slave AXI Interface ; HP Slave AXI Interface", 3); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "HP Slave AXI Interface ; HP Slave AXI Interface ; HP Slave AXI Interface", 3); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "ACP Slave AXI Interface ; ACP Slave AXI Interface ; ACP Slave AXI Interface", 4); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "ACP Slave AXI Interface ; ACP Slave AXI Interface ; ACP Slave AXI Interface", 4); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6); // aw
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6, "PS-PL Cross Trigger interface", 0, true, false, false, false, false, true); // aw - Double Click - Node
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "Input Cross Trigger ; Input Cross Trigger ; Input Cross Trigger", 7, "Input Cross Trigger", 0, true); // aw - Node
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "Input Cross Trigger ; Input Cross Trigger ; Input Cross Trigger", 7); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "Input Cross Trigger ; Input Cross Trigger ; Input Cross Trigger", 7); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "DMA Controller ; DMA Controller ; DMA Controller", 5); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "DMA Controller ; DMA Controller ; DMA Controller", 5); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "ACP Slave AXI Interface ; ACP Slave AXI Interface ; ACP Slave AXI Interface", 4); // aw
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI ACP interface ; 0 ; Enables AXI coherent 64-bit slave interface", 5, "0", 1, false); // aw
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_USE_S_AXI_ACP {1}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_USE_S_AXI_ACP {1}] [get_bd_cells processing_system7_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // N
+// HMemoryUtils.trashcanNow. Engine heap size: 2,046 MB. GUI used memory: 219 MB. Current time: 7/14/21, 12:19:00 PM CEST
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k
+// Elapsed time: 161 seconds
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "HP Slave AXI Interface ; HP Slave AXI Interface ; HP Slave AXI Interface", 3); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI HP0 interface ; 1 ; Enables AXI high performance slave interface 0", 4); // aw
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI HP1 interface ; 1 ; Enables AXI high performance slave interface 1", 6, "S AXI HP1 interface", 0, true); // aw - Node
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI HP1 interface ; 1 ; Enables AXI high performance slave interface 1", 6); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI HP2 interface ; 1 ; Enables AXI high performance slave interface 2", 8); // aw
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Message: startgroup 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Customize Pin"); // r
+// [Engine Memory]: 2,041 MB (+3560kb) [00:38:51]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "User Signals", 1); // bi
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Advanced", 2); // bi
+dismissDialog("Customize Pin"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // N
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "HP Slave AXI Interface ; HP Slave AXI Interface ; HP Slave AXI Interface", 3); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI HP2 interface ; 1 ; Enables AXI high performance slave interface 2", 6); // aw
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI HP2 DATA WIDTH ; 64 ; Allows HP2 to be used in 32/64 bit data width mode", 7, "64", 1, false); // aw
+selectComboBox("PCW S AXI HP2 DATA WIDTH (PCW_S_AXI_HP2_DATA_WIDTH)", "32", 0); // E
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_S_AXI_HP2_DATA_WIDTH {32}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.PCW_S_AXI_HP2_DATA_WIDTH {32}] [get_bd_cells processing_system7_0] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 287 MB (+703kb) [00:39:11]
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+dismissDialog("Customize Pin"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// r (cr): Customize Pin: addNotify
+dismissDialog("Customize Pin"); // r
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Advanced", 1); // bi
+// Elapsed time: 15 seconds
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property location {1 88 285} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 88 285} [get_bd_cells clk_wiz_0] 
+// Tcl Command: 'set_property location {1 121 395} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 121 395} [get_bd_cells clk_wiz_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins DPUCZDX8G_0/m_axi_dpu_aclk] [get_bd_pins clk_wiz_0/clk_out2] 
+// Tcl Command: 'set_property location {1 57 318} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 57 318} [get_bd_cells clk_wiz_0] 
+// Tcl Command: 'set_property location {1 126 283} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 126 283} [get_bd_cells clk_wiz_0] 
+// Tcl Command: 'set_property location {0.5 -19 283} [get_bd_cells clk_wiz_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -19 283} [get_bd_cells clk_wiz_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+// Elapsed time: 98 seconds
+dismissDialog("Re-customize IP"); // N
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "AXI Non Secure Enablement  ; 0 ; Enable AXI Non Secure Transaction", 1, "AXI Non Secure Enablement ", 0, true); // aw - Node
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "ACP Slave AXI Interface ; ACP Slave AXI Interface ; ACP Slave AXI Interface", 4); // aw
+selectTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "S AXI ACP interface ; 1 ; Enables AXI coherent 64-bit slave interface", 5, "1", 1, false); // aw
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_USE_S_AXI_ACP {0}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_USE_S_AXI_ACP {0}] [get_bd_cells processing_system7_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,108 MB. GUI used memory: 238 MB. Current time: 7/14/21, 12:24:50 PM CEST
+dismissDialog("Customize IP"); // bz
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins clk_wiz_0/clk_out2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP1_ACLK] [get_bd_pins clk_wiz_0/clk_out2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP2_ACLK] [get_bd_pins clk_wiz_0/clk_out2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins clk_wiz_0/clk_out2] 
+// Elapsed time: 347 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 635, 282, 1120, 543, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, "Disconnect Pin"); // ak
+// Run Command: PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_net /clk_wiz_0_clk_out2 [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK1] 
+// Elapsed time: 164 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 221, 409, 1120, 543, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ak
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "processor"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 3, "Processor System Reset", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 3); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 3, "Processor System Reset", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 
+// Tcl Message: endgroup 
+// [Engine Memory]: 2,151 MB (+8022kb) [00:50:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,156 MB. GUI used memory: 231 MB. Current time: 7/14/21, 12:33:35 PM CEST
+// Tcl Command: 'set_property location {1.5 211 476} [get_bd_cells proc_sys_reset_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1.5 211 476} [get_bd_cells proc_sys_reset_0] 
+// Tcl Command: 'set_property location {3 586 519} [get_bd_cells proc_sys_reset_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 586 519} [get_bd_cells proc_sys_reset_0] 
+// Elapsed time: 15 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTIMIZE_LAYOUT"); // E
+// Tcl Command: 'regenerate_bd_layout -routing'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_ROUTE_LAYOUT
+// Tcl Message: regenerate_bd_layout -routing 
+// Elapsed time: 69 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 84, 451, 1120, 642, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ak
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "processor"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 3, "Processor System Reset", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 3); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 3, "Processor System Reset", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {1 158 684} [get_bd_cells proc_sys_reset_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 158 684} [get_bd_cells proc_sys_reset_0] 
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 690, 461, 1120, 642, false, false, false, true, false); // hv - Popup Trigger
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "System_select_area"); // x: TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+// cb (cr): Select Area: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select Area"); // cb
+// Tcl Command: 'set_property location {2 497 677} [get_bd_cells proc_sys_reset_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {2 497 497} [get_bd_cells proc_sys_reset_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: startgroup 
+// Tcl Message: set_property location {2 497 677} [get_bd_cells proc_sys_reset_0] 
+// Tcl Message: set_property location {2 497 497} [get_bd_cells proc_sys_reset_1] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_1/ext_reset_in] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_1/aux_reset_in] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_1/mb_debug_sys_rst] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_1/dcm_locked] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/aux_reset_in] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/mb_debug_sys_rst] 
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/dcm_locked] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_1/ext_reset_in] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins proc_sys_reset_1/slowest_sync_clk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins proc_sys_reset_1/peripheral_aresetn] [get_bd_pins DPUCZDX8G_0/dpu_2x_resetn] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+// Elapsed time: 48 seconds
+dismissDialog("Re-customize IP"); // N
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k
+selectButton("Clock Configuration", "Clock Configuration"); // k
+selectButton("Clock Configuration", "Clock Configuration"); // k
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // z
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // z
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // z
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // z
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // z
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // z
+collapseTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // z
+selectTab(PAResourceAtoD.ClkConfigMainPanel_TABBED_PANE, PAResourceAtoD.ClkConfigMainPanel_ADVANCED_CLOCKING, "Advanced Clocking", 1); // i
+selectTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2, "PL Fabric Clocks", 0, true); // e - Node
+expandTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // e
+selectButton("Interrupts", "Interrupts"); // k
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0); // ak
+dismissDialog("Re-customize IP"); // r
+// [GUI Memory]: 306 MB (+4735kb) [00:54:04]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_0/reset] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins clk_wiz_0/clk_out2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins DPUCZDX8G_0/m_axi_dpu_aresetn] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins DPUCZDX8G_0/s_axi_aresetn] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,140 MB. GUI used memory: 242 MB. Current time: 7/14/21, 1:03:35 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,140 MB. GUI used memory: 237 MB. Current time: 7/14/21, 1:33:35 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,140 MB. GUI used memory: 237 MB. Current time: 7/14/21, 2:03:35 PM CEST

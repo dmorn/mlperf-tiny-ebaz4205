@@ -1,0 +1,475 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jul 18 11:09:20 2021
+# Process ID: 2145
+# Current directory: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty
+# Command line: vivado ebaz4205_top.xpr
+# Log file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/vivado.log
+# Journal file: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ebaz4205_top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/dan/src/mlperf-tiny-ebaz4205/hw/IP/DPU-TRD'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dan/xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_DPUCZDX8G_0_0' generated file not found '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DPUCZDX8G_0_0' generated file not found '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DPUCZDX8G_0_0' generated file not found '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DPUCZDX8G_0_0' generated file not found '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DPUCZDX8G_0_0' generated file not found '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 7295.289 ; gain = 96.129 ; free physical = 4405 ; free virtual = 8496
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd}
+Reading block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:DPUCZDX8G:3.3 - DPUCZDX8G_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Successfully read diagram <system> from block design file </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 8665.098 ; gain = 1239.207 ; free physical = 3965 ; free virtual = 8210
+startgroup
+set_property -dict [list CONFIG.ARCH_ICP {8} CONFIG.ARCH_OCP {8} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B1024;RAM Usage:High;Channel Augmentation:Enabled;DepthWiseConv:Enabled;AveragePool:Enabled;ReLU Type:ReLU + LeakyReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Independent;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:High;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:218;Ultra-RAM Count:0.0;Block-RAM Count:137.5} CONFIG.ARCH {1024} CONFIG.CONV_DSP_NUM {192} CONFIG.DWCV_DSP_NUM {24} CONFIG.BANK_WGT_N {9} CONFIG.BBANK_WGT_N {9} CONFIG.SUM_DSP_NUM {218} CONFIG.SUM_BRAM_N {137.5}] [get_bd_cells DPUCZDX8G_0]
+endgroup
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+[Sun Jul 18 11:12:26 2021] Launched system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 11:12:26 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 8864.898 ; gain = 25.914 ; free physical = 3746 ; free virtual = 8043
+CRITICAL WARNING: [Common 17-1649] The Vivado message database '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/opt_design.pb' contains 31152 messages. Restoring all messages from this message database will impact Vivado performance, so only WARNING, CRITICAL WARNING, and ERROR messages will be restored. To restore all messages from this file use the tcl command 'set_param messaging.loadPbLimit 31153' and re-open the project.
+startgroup
+set_property -dict [list CONFIG.ARCH_PP {4} CONFIG.CONV_LEAKYRELU {0} CONFIG.DWCV_PARALLEL {2} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B512;RAM Usage:High;Channel Augmentation:Enabled;DepthWiseConv:Enabled;AveragePool:Enabled;ReLU Type:ReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Independent;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:High;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:110;Ultra-RAM Count:0.0;Block-RAM Count:89.5} CONFIG.ARCH {512} CONFIG.CONV_DSP_NUM {96} CONFIG.DWCV_DSP_NUM {12} CONFIG.CONV_RELU_ADDON {2} CONFIG.BANK_IMG_N {12} CONFIG.BBANK_IMG_N {12} CONFIG.SUM_DSP_NUM {110} CONFIG.SUM_BRAM_N {89.5}] [get_bd_cells DPUCZDX8G_0]
+endgroup
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+[Sun Jul 18 11:40:32 2021] Launched system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 11:40:32 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 8928.559 ; gain = 63.660 ; free physical = 3950 ; free virtual = 7353
+startgroup
+set_property -dict [list CONFIG.CONV_DSP_ACCU_ENA {0} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B512;RAM Usage:High;Channel Augmentation:Enabled;DepthWiseConv:Enabled;AveragePool:Enabled;ReLU Type:ReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Independent;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:Low;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:78;Ultra-RAM Count:0.0;Block-RAM Count:89.5} CONFIG.CONV_DSP_NUM {64} CONFIG.SUM_DSP_NUM {78}] [get_bd_cells DPUCZDX8G_0]
+endgroup
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+[Sun Jul 18 12:02:02 2021] Launched system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 12:02:03 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 8928.559 ; gain = 0.000 ; free physical = 4319 ; free virtual = 7337
+startgroup
+set_property -dict [list CONFIG.ARCH_IMG_BKGRP {2} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B512;RAM Usage:Low;Channel Augmentation:Enabled;DepthWiseConv:Enabled;AveragePool:Enabled;ReLU Type:ReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Independent;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:Low;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:78;Ultra-RAM Count:0.0;Block-RAM Count:73.5} CONFIG.BANK_IMG_N {8} CONFIG.BBANK_IMG_N {8} CONFIG.SUM_BRAM_N {73.5}] [get_bd_cells DPUCZDX8G_0]
+endgroup
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+reset_run synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+[Sun Jul 18 12:19:49 2021] Launched system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 12:19:49 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 8971.645 ; gain = 43.086 ; free physical = 4444 ; free virtual = 7216
+startgroup
+set_property -dict [list CONFIG.LOAD_AUGM {0} CONFIG.POOL_AVERAGE {0} CONFIG.DWCV_RELU6 {0} CONFIG.DWCV_PARALLEL {0} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B512;RAM Usage:Low;Channel Augmentation:Disabled;DepthWiseConv:Disabled;AveragePool:Disabled;ReLU Type:ReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Independent;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:Low;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:66;Ultra-RAM Count:0.0;Block-RAM Count:69.5} CONFIG.DWCV_DSP_NUM {0} CONFIG.DWCV_ENA {0} CONFIG.BANK_WGT_N {8} CONFIG.BBANK_WGT_N {8} CONFIG.SUM_DSP_NUM {66} CONFIG.SUM_BRAM_N {69.5}] [get_bd_cells DPUCZDX8G_0]
+endgroup
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+reset_run synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+[Sun Jul 18 12:41:15 2021] Launched system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 12:41:15 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 9006.660 ; gain = 35.016 ; free physical = 4724 ; free virtual = 7207
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0.dcp' for cell 'system_wrapper_i/system_i/DPUCZDX8G_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.dcp' for cell 'system_wrapper_i/system_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.dcp' for cell 'system_wrapper_i/system_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0.dcp' for cell 'system_wrapper_i/system_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_2_0/system_proc_sys_reset_2_0.dcp' for cell 'system_wrapper_i/system_i/proc_sys_reset_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_wrapper_i/system_i/processing_system7_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9006.660 ; gain = 0.000 ; free physical = 4564 ; free virtual = 6950
+INFO: [Netlist 29-17] Analyzing 4812 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_wrapper_i/system_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_wrapper_i/system_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_wrapper_i/system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_wrapper_i/system_i/processing_system7_0/inst'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_wrapper_i/system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_wrapper_i/system_i/clk_wiz_0/inst'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_wrapper_i/system_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_wrapper_i/system_i/clk_wiz_0/inst'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0_board.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0_board.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_1_0/system_proc_sys_reset_1_0.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_2_0/system_proc_sys_reset_2_0_board.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_2_0/system_proc_sys_reset_2_0_board.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_2_0/system_proc_sys_reset_2_0.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_proc_sys_reset_2_0/system_proc_sys_reset_2_0.xdc] for cell 'system_wrapper_i/system_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/pinout.xdc]
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/pinout.xdc]
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/bitstream.xdc]
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/bitstream.xdc]
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/general.xdc]
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/src/xilinx/xdc/general.xdc]
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0_impl.xdc] for cell 'system_wrapper_i/system_i/DPUCZDX8G_0/inst'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0_impl.xdc] for cell 'system_wrapper_i/system_i/DPUCZDX8G_0/inst'
+Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0.xdc] for cell 'system_wrapper_i/system_i/DPUCZDX8G_0/inst'
+Finished Parsing XDC File [/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/ip/system_DPUCZDX8G_0_0/system_DPUCZDX8G_0_0.xdc] for cell 'system_wrapper_i/system_i/DPUCZDX8G_0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9508.418 ; gain = 0.000 ; free physical = 4036 ; free virtual = 6408
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1965 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 193 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM64M => RAM64M (RAMD64E(x4)): 1694 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 76 instances
+
+open_run: Time (s): cpu = 00:01:33 ; elapsed = 00:01:09 . Memory (MB): peak = 9583.457 ; gain = 576.797 ; free physical = 3942 ; free virtual = 6336
+open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ {100} CONFIG.CLKOUT3_USED {false} CONFIG.CLKIN1_JITTER_PS {100.0} CONFIG.MMCM_CLKFBOUT_MULT_F {12} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT2_DIVIDE {1} CONFIG.PLL_CLKIN_PERIOD {10.000} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {90.074} CONFIG.CLKOUT1_PHASE_ERROR {87.180} CONFIG.CLKOUT2_JITTER {102.086} CONFIG.CLKOUT2_PHASE_ERROR {87.180} CONFIG.CLKOUT3_JITTER {115.831} CONFIG.CLKOUT3_PHASE_ERROR {87.180}] [get_bd_cells clk_wiz_0]
+endgroup
+delete_bd_objs [get_bd_nets proc_sys_reset_2_peripheral_aresetn]
+connect_bd_net [get_bd_pins DPUCZDX8G_0/s_axi_aresetn] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out100]
+connect_bd_net [get_bd_pins DPUCZDX8G_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+disconnect_bd_net /processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_2/ext_reset_in]
+delete_bd_objs [get_bd_cells proc_sys_reset_2]
+connect_bd_net [get_bd_pins clk_wiz_0/resetn] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+regenerate_bd_layout -routing
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter TIME_HOUR(12) on '/DPUCZDX8G_0' with propagated value(13). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter TIME_QUARTER(2) on '/DPUCZDX8G_0' with propagated value(0). Command ignored
+CRITICAL WARNING: [BD 41-1348] Reset pin /DPUCZDX8G_0/s_axi_aresetn (associated clock /DPUCZDX8G_0/s_axi_aclk) is connected to asynchronous reset source /processing_system7_0/FCLK_RESET0_N.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /processing_system7_0/FCLK_CLK0.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-238] Port/Pin property FREQ_HZ does not match between /eth0_clk(25000000) and /processing_system7_0/FCLK_CLK0(100000000)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {25} CONFIG.PCW_EN_CLK1_PORT {1}] [get_bd_cells processing_system7_0]
+endgroup
+set_property location {1527 367} [get_bd_ports eth0_clk]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+connect_bd_net [get_bd_ports eth0_clk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins DPUCZDX8G_0/s_axi_aclk]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_0/clk_in1]
+set_property location {1419 422} [get_bd_ports eth0_clk]
+set_property location {1427 392} [get_bd_ports eth0_clk]
+regenerate_bd_layout -routing
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter TIME_HOUR(12) on '/DPUCZDX8G_0' with propagated value(13). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter TIME_QUARTER(2) on '/DPUCZDX8G_0' with propagated value(0). Command ignored
+CRITICAL WARNING: [BD 41-1348] Reset pin /DPUCZDX8G_0/s_axi_aresetn (associated clock /DPUCZDX8G_0/s_axi_aclk) is connected to asynchronous reset source /processing_system7_0/FCLK_RESET0_N.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /processing_system7_0/FCLK_CLK0.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run system_processing_system7_0_0_synth_1
+reset_run system_clk_wiz_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_clk_wiz_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_processing_system7_0_0
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jul 18 13:08:41 2021] Launched system_processing_system7_0_0_synth_1, system_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_processing_system7_0_0_synth_1/runme.log
+system_clk_wiz_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_clk_wiz_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 13:08:41 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:47 ; elapsed = 00:00:42 . Memory (MB): peak = 9712.320 ; gain = 35.758 ; free physical = 3720 ; free virtual = 6174
+startgroup
+set_property -dict [list CONFIG.S_AXI_CLK_INDEPENDENT {0} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B512;RAM Usage:Low;Channel Augmentation:Disabled;DepthWiseConv:Disabled;AveragePool:Disabled;ReLU Type:ReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Common with M-AXI Clock;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:Low;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:66;Ultra-RAM Count:0.0;Block-RAM Count:69.5}] [get_bd_cells DPUCZDX8G_0]
+WARNING: [BD 41-1684] Pin /DPUCZDX8G_0/s_axi_aclk is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /DPUCZDX8G_0/s_axi_aresetn is now disabled. All connections to this pin have been removed. 
+endgroup
+regenerate_bd_layout -routing
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_NAND_PERIPHERAL_ENABLE {0} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /DPUCZDX8G_0/S_AXI(200000000) and /processing_system7_0/M_AXI_GP0(100000000)
+ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /DPUCZDX8G_0/S_AXI(/clk_wiz_0_clk_out1) and /processing_system7_0/M_AXI_GP0(system_processing_system7_0_0_FCLK_CLK0)
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins clk_wiz_0/clk_out200]
+regenerate_bd_layout -routing
+validate_bd_design
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 9728.414 ; gain = 0.000 ; free physical = 3850 ; free virtual = 6565
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run system_processing_system7_0_0_synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_DPUCZDX8G_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_processing_system7_0_0
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jul 18 13:23:06 2021] Launched system_processing_system7_0_0_synth_1, system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_processing_system7_0_0_synth_1/runme.log
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 13:23:06 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 9769.574 ; gain = 41.160 ; free physical = 3863 ; free virtual = 6503
+open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd}
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 9769.574 ; gain = 0.000 ; free physical = 1462 ; free virtual = 4355
+startgroup
+set_property -dict [list CONFIG.CONV_DSP_ACCU_ENA {1} CONFIG.DNNDK_PRINT {Number of DPU Cores:1;Arch of DPU:B512;RAM Usage:Low;Channel Augmentation:Disabled;DepthWiseConv:Disabled;AveragePool:Disabled;ReLU Type:ReLU + ReLU6;Number of SFM cores:0;S-AXI Clock Mode:Common with M-AXI Clock;dpu_2x Clock Gating:Disabled;DSP48 Maximal Cascade Length:1;DSP48 Usage:High;Ultra-RAM Use per DPU:0;Enable timestamp auto-update:Enabled;Target Version:1.4.1;AXI Protocol:AXI3;S-AXI Data Width:32;M-AXI GP Data Width:32;M-AXI HP Data Width (DPU):64;M-AXI HP Data Width (SFM):128;M-AXI ID Width:2;DSP Slice Count:98;Ultra-RAM Count:0.0;Block-RAM Count:69.5} CONFIG.CONV_DSP_NUM {96} CONFIG.SUM_DSP_NUM {98}] [get_bd_cells DPUCZDX8G_0]
+endgroup
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+reset_run synth_1
+reset_run system_DPUCZDX8G_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : </home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP1_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data1_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_data0_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_AWID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP2_ARID'(6) to pin: '/DPUCZDX8G_0/dpu0_m_axi_instr_arid'(2) - Only lower order bits will be connected.
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/sim/system.vhd
+VHDL Output written to : /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hdl/system_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DPUCZDX8G_0 .
+Exporting to file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.gen/sources_1/bd/system/synth/system.hwdef
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jul 18 13:39:37 2021] Launched system_DPUCZDX8G_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_DPUCZDX8G_0_0_synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/system_DPUCZDX8G_0_0_synth_1/runme.log
+synth_1: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/synth_1/runme.log
+[Sun Jul 18 13:39:37 2021] Launched impl_1...
+Run output will be captured here: /home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 9801.910 ; gain = 15.738 ; free physical = 4029 ; free virtual = 6477
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 9801.910 ; gain = 0.000 ; free physical = 4188 ; free virtual = 6382
+open_bd_design {/home/dan/src/mlperf-tiny-ebaz4205/hw/build-dirty/ebaz4205_top.srcs/sources_1/bd/system/system.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 18 14:14:45 2021...

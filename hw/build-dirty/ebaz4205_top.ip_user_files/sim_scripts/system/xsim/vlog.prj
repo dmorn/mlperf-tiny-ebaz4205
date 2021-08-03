@@ -1,0 +1,21 @@
+verilog xil_defaultlib --include "/home/dan/xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/34f8/hdl" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/6fc9/inc" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/d0f7" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/ip/system_DPUCZDX8G_0_0/xci/sfm/fp_exp/sim/fp_exp.v" \
+"../../../bd/system/ip/system_DPUCZDX8G_0_0/xci/sfm/fp_convert/sim/fp_convert.v" \
+"../../../bd/system/ip/system_DPUCZDX8G_0_0/xci/sfm/fp_div/sim/fp_div.v" \
+"../../../bd/system/ip/system_DPUCZDX8G_0_0/xci/sfm/fp_acc/sim/fp_acc.v" \
+"../../../bd/system/ip/system_DPUCZDX8G_0_0/xci/sfm/fp_add/sim/fp_add.v" \
+
+sv xil_defaultlib --include "/home/dan/xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/34f8/hdl" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/6fc9/inc" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/d0f7" \
+"../../../bd/system/ipshared/6fc9/hdl/DPUCZDX8G_v3_3_0_vl_dpu.sv" \
+"../../../bd/system/ipshared/6fc9/hdl/DPUCZDX8G_v3_3_0_vl_sfm.sv" \
+"../../../bd/system/ipshared/6fc9/hdl/DPUCZDX8G_v3_3_0_vl_top.sv" \
+"../../../bd/system/ip/system_DPUCZDX8G_0_0/sim/system_DPUCZDX8G_0_0.sv" \
+
+verilog xil_defaultlib --include "/home/dan/xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/34f8/hdl" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/6fc9/inc" --include "../../../../ebaz4205_top.gen/sources_1/bd/system/ipshared/d0f7" \
+"../../../bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

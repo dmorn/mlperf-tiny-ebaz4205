@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717949",
+   "Default View_TopLeft":"0,-42",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port ddr -pg 1 -lvl 4 -x 1360 -y 300 -defaultsOSRD
+preplace port eth0_mdio -pg 1 -lvl 4 -x 1360 -y 200 -defaultsOSRD
+preplace port fixed_io -pg 1 -lvl 4 -x 1360 -y 320 -defaultsOSRD
+preplace port eth0_clk -pg 1 -lvl 4 -x 1360 -y 380 -defaultsOSRD
+preplace port eth0_gmii_rx_clk -pg 1 -lvl 4 -x 1360 -y 120 -defaultsOSRD -right
+preplace port eth0_gmii_rx_dv -pg 1 -lvl 4 -x 1360 -y 140 -defaultsOSRD -right
+preplace port eth0_gmii_tx_clk -pg 1 -lvl 4 -x 1360 -y 160 -defaultsOSRD -right
+preplace portBus emio_i -pg 1 -lvl 4 -x 1360 -y 240 -defaultsOSRD -right
+preplace portBus emio_o -pg 1 -lvl 4 -x 1360 -y 260 -defaultsOSRD
+preplace portBus emio_t -pg 1 -lvl 4 -x 1360 -y 280 -defaultsOSRD
+preplace portBus eth0_gmii_rxd -pg 1 -lvl 4 -x 1360 -y 180 -defaultsOSRD -right
+preplace portBus eth0_gmii_tx_en -pg 1 -lvl 4 -x 1360 -y 80 -defaultsOSRD
+preplace portBus eth0_gmii_txd -pg 1 -lvl 4 -x 1360 -y 100 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1060 -y 230 -defaultsOSRD
+preplace inst DPUCZDX8G_0 -pg 1 -lvl 2 -x 600 -y 210 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 600 -y 560 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 220 -y 170 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -x 220 -y 350 -defaultsOSRD
+preplace netloc ENET0_GMII_RXD_0_1 1 3 1 N 180
+preplace netloc ENET0_GMII_RX_CLK_0_1 1 3 1 N 120
+preplace netloc ENET0_GMII_RX_DV_0_1 1 3 1 N 140
+preplace netloc ENET0_GMII_TX_CLK_0_1 1 3 1 N 160
+preplace netloc GPIO_I_0_1 1 3 1 N 240
+preplace netloc processing_system7_0_ENET0_GMII_TXD 1 3 1 N 100
+preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 3 1 N 80
+preplace netloc processing_system7_0_GPIO_O 1 3 1 N 260
+preplace netloc processing_system7_0_GPIO_T 1 3 1 N 280
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 40 450 400 480 NJ 480 1320
+preplace netloc clk_wiz_0_clk_out2x 1 0 3 20 60 410 310 780
+preplace netloc clk_wiz_0_clk_out2 1 0 3 30 70 400 110 800
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 1 N 210
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 1 1 400 250n
+preplace netloc DPUCZDX8G_0_dpu_interrupt 1 2 1 790 240n
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 1 N 380
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 420 470 N 470 1330
+preplace netloc processing_system7_0_DDR 1 3 1 N 300
+preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 3 1 N 200
+preplace netloc DPUCZDX8G_0_DPU0_M_AXI_DATA1 1 2 1 N 200
+preplace netloc DPUCZDX8G_0_DPU0_M_AXI_DATA0 1 2 1 N 180
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 420 460 NJ 460 1340
+preplace netloc DPUCZDX8G_0_DPU0_M_AXI_INSTR 1 2 1 N 220
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 N 320
+levelinfo -pg 1 0 220 600 1060 1360
+pagesize -pg 1 -db -bbox -sgen 0 0 1560 640
+"
+}
+0
